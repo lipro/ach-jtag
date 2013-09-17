@@ -1,0 +1,1667 @@
+<project title="" version="0.3">
+    <properties/>
+    <newdiagrams>
+        <border displayrows="true" cols="17" displaycols="true" colsize="60" rows="8" rowsize="80"/>
+        <inset title="" folio="%id/%total" author="" filename="" date="null"/>
+        <conductors type="simple"/>
+    </newdiagrams>
+    <diagram title="Overview (DP chart)" displayrows="true" version="0.3" cols="17" folio="%id/%total" displaycols="true" height="660" colsize="60" order="1" rows="8" author="Stephan Linz" filename="" date="20130914" rowsize="80">
+        <defaultconductor type="simple"/>
+        <elements>
+            <element x="140" y="110" type="embed://import/collection_achjtag/ach_jtag_overview.elmt" orientation="0">
+                <terminals/>
+                <inputs/>
+            </element>
+        </elements>
+    </diagram>
+    <diagram title="JTAG and SWD Layout at Port A" displayrows="true" version="0.3" cols="17" folio="%id/%total" displaycols="true" height="660" colsize="60" order="2" rows="8" author="Stephan Linz" filename="" date="20130914" rowsize="80">
+        <defaultconductor type="simple"/>
+        <elements>
+            <element x="320" y="510" type="embed://import/collection_achjtag/terminals/potential.elmt" orientation="1">
+                <terminals>
+                    <terminal x="0" y="6" id="0" orientation="2"/>
+                </terminals>
+                <inputs>
+                    <input x="-8" y="-15" userrotation="270" userx="0.342969" usery="-1.42891" text="P3V3"/>
+                </inputs>
+            </element>
+            <element x="410" y="530" type="embed://import/collection_achjtag/semiconductors/rlc/normaux/resistance.elmt" orientation="3">
+                <terminals>
+                    <terminal x="0" y="-17" id="1" orientation="0"/>
+                    <terminal x="0" y="17" id="2" orientation="2"/>
+                </terminals>
+                <inputs>
+                    <input x="7.5" y="3.3333" userrotation="-270" userx="9.9983" usery="-28.1923" text="56..100"/>
+                </inputs>
+            </element>
+            <element x="440" y="50" type="embed://import/collection_achjtag/terminals/potential.elmt" orientation="3">
+                <terminals>
+                    <terminal x="0" y="6" id="3" orientation="2"/>
+                </terminals>
+                <inputs>
+                    <input x="-8" y="-15" userrotation="-270" userx="-0.757031" usery="-40.4289" text="P3V3"/>
+                </inputs>
+            </element>
+            <element x="730" y="470" type="embed://import/collection_achjtag/semiconductors/logic_gates/drv/buf_ien_left.elmt" orientation="0">
+                <terminals>
+                    <terminal x="36" y="0" id="4" orientation="1"/>
+                    <terminal x="36" y="20" id="5" orientation="1"/>
+                    <terminal x="-36" y="20" id="6" orientation="3"/>
+                </terminals>
+                <inputs>
+                    <input x="-45" y="10" text="_"/>
+                    <input x="25" y="-10" text="_"/>
+                    <input x="25" y="10" text="_"/>
+                    <input x="-25" y="45" userx="-25" usery="44" text="SWDI ← SWDIO"/>
+                </inputs>
+            </element>
+            <element x="730" y="220" type="embed://import/collection_achjtag/semiconductors/logic_gates/drv/buf_en_left.elmt" orientation="0">
+                <terminals>
+                    <terminal x="36" y="0" id="7" orientation="1"/>
+                    <terminal x="36" y="20" id="8" orientation="1"/>
+                    <terminal x="-36" y="20" id="9" orientation="3"/>
+                </terminals>
+                <inputs>
+                    <input x="-45" y="10" text="_"/>
+                    <input x="25" y="-10" text="_"/>
+                    <input x="25" y="10" text="_"/>
+                    <input x="-25" y="45" text="DI ← TDO"/>
+                </inputs>
+            </element>
+            <element x="340" y="570" type="embed://import/collection_achjtag/semiconductors/rlc/normaux/resistance.elmt" orientation="1">
+                <terminals>
+                    <terminal x="0" y="-17" id="10" orientation="0"/>
+                    <terminal x="0" y="17" id="11" orientation="2"/>
+                </terminals>
+                <inputs>
+                    <input x="7.5" y="3.3333" userrotation="-90" userx="-10.1798" usery="15.5334" text="220"/>
+                </inputs>
+            </element>
+            <element x="270" y="590" type="embed://import/collection_achjtag/semiconductors/diodes/diode_led.elmt" orientation="1">
+                <terminals>
+                    <terminal x="0" y="-17" id="12" orientation="0"/>
+                    <terminal x="0" y="17" id="13" orientation="2"/>
+                </terminals>
+                <inputs>
+                    <input x="7.75" y="3" userrotation="-90" userx="-9.75081" usery="-3.81465" text="red"/>
+                </inputs>
+            </element>
+            <element x="390" y="570" type="embed://import/collection_achjtag/terminals/potential.elmt" orientation="1">
+                <terminals>
+                    <terminal x="0" y="6" id="14" orientation="2"/>
+                </terminals>
+                <inputs>
+                    <input x="-8" y="-15" userrotation="-90" userx="0.342969" usery="-1.42891" text="P3V3"/>
+                </inputs>
+            </element>
+            <element x="110" y="540" type="embed://import/collection_achjtag/semiconductors/integrated_circuits/communication/fdti/mpsse/ft2232h/ft2232h_acbus_mpsse.elmt" orientation="1">
+                <terminals>
+                    <terminal x="36" y="-30" id="15" orientation="1"/>
+                    <terminal x="36" y="-10" id="16" orientation="1"/>
+                    <terminal x="36" y="50" id="17" orientation="1"/>
+                    <terminal x="36" y="70" id="18" orientation="1"/>
+                    <terminal x="36" y="90" id="19" orientation="1"/>
+                    <terminal x="36" y="110" id="20" orientation="1"/>
+                    <terminal x="36" y="30" id="21" orientation="1"/>
+                    <terminal x="36" y="10" id="22" orientation="1"/>
+                </terminals>
+                <inputs>
+                    <input x="25" y="-40" text="_"/>
+                    <input x="25" y="20" text="_"/>
+                    <input x="25" y="-20" text="_"/>
+                    <input x="25" y="0" text="_"/>
+                    <input x="25" y="40" text="_"/>
+                    <input x="25" y="60" text="_"/>
+                    <input x="25" y="80" text="_"/>
+                    <input x="25" y="100" text="_"/>
+                    <input x="-70" y="88.5" text="FT2232H ACBUS"/>
+                </inputs>
+            </element>
+            <element x="110" y="100" type="embed://import/collection_achjtag/semiconductors/integrated_circuits/communication/fdti/mpsse/ft2232h/ft2232h_adbus_mpsse.elmt" orientation="1">
+                <terminals>
+                    <terminal x="36" y="-30" id="23" orientation="1"/>
+                    <terminal x="36" y="-10" id="24" orientation="1"/>
+                    <terminal x="36" y="10" id="25" orientation="1"/>
+                    <terminal x="36" y="30" id="26" orientation="1"/>
+                    <terminal x="36" y="50" id="27" orientation="1"/>
+                    <terminal x="36" y="70" id="28" orientation="1"/>
+                    <terminal x="36" y="90" id="29" orientation="1"/>
+                    <terminal x="36" y="110" id="30" orientation="1"/>
+                </terminals>
+                <inputs>
+                    <input x="25" y="-20" text="_"/>
+                    <input x="25" y="0" text="_"/>
+                    <input x="25" y="-40" text="_"/>
+                    <input x="25" y="20" text="_"/>
+                    <input x="25" y="60" text="_"/>
+                    <input x="25" y="80" text="_"/>
+                    <input x="25" y="40" text="_"/>
+                    <input x="25" y="100" text="_"/>
+                    <input x="-70" y="85" text="FT2232H ADBUS"/>
+                </inputs>
+            </element>
+            <element x="390" y="190" type="embed://import/collection_achjtag/semiconductors/logic_gates/drv/buf_ien.elmt" orientation="0">
+                <terminals>
+                    <terminal x="-36" y="0" id="31" orientation="3"/>
+                    <terminal x="36" y="20" id="32" orientation="1"/>
+                    <terminal x="-36" y="20" id="33" orientation="3"/>
+                </terminals>
+                <inputs>
+                    <input x="-45" y="10" text="_"/>
+                    <input x="-45" y="-10" text="_"/>
+                    <input x="25" y="10" text="_"/>
+                    <input x="-25" y="45" text="JTAG"/>
+                </inputs>
+            </element>
+            <element x="390" y="300" type="embed://import/collection_achjtag/semiconductors/logic_gates/drv/buf_ien.elmt" orientation="0">
+                <terminals>
+                    <terminal x="-36" y="0" id="34" orientation="3"/>
+                    <terminal x="36" y="20" id="35" orientation="1"/>
+                    <terminal x="-36" y="20" id="36" orientation="3"/>
+                </terminals>
+                <inputs>
+                    <input x="-45" y="10" text="_"/>
+                    <input x="-45" y="-10" text="_"/>
+                    <input x="25" y="10" text="_"/>
+                    <input x="-25" y="45" text="SWD"/>
+                </inputs>
+            </element>
+            <element x="390" y="450" type="embed://import/collection_achjtag/semiconductors/logic_gates/drv/buf_ien.elmt" orientation="0">
+                <terminals>
+                    <terminal x="-36" y="0" id="37" orientation="3"/>
+                    <terminal x="36" y="20" id="38" orientation="1"/>
+                    <terminal x="-36" y="20" id="39" orientation="3"/>
+                </terminals>
+                <inputs>
+                    <input x="-45" y="10" text="_"/>
+                    <input x="-45" y="-10" text="_"/>
+                    <input x="25" y="10" text="_"/>
+                    <input x="-25" y="45" text="SRST"/>
+                </inputs>
+            </element>
+            <element x="410" y="550" type="embed://import/collection_achjtag/semiconductors/rlc/normaux/resistance.elmt" orientation="3">
+                <terminals>
+                    <terminal x="0" y="-17" id="40" orientation="0"/>
+                    <terminal x="0" y="17" id="41" orientation="2"/>
+                </terminals>
+                <inputs>
+                    <input x="7.5" y="3.3333" userrotation="-270" userx="9.68869" usery="-28.2794" text="56..100"/>
+                </inputs>
+            </element>
+            <element x="270" y="570" type="embed://import/collection_achjtag/semiconductors/diodes/diode_led.elmt" orientation="1">
+                <terminals>
+                    <terminal x="0" y="-17" id="42" orientation="0"/>
+                    <terminal x="0" y="17" id="43" orientation="2"/>
+                </terminals>
+                <inputs>
+                    <input x="7.75" y="3" userrotation="-90" userx="-9.75081" usery="-3.81465" text="green"/>
+                </inputs>
+            </element>
+            <element x="530" y="50" type="embed://import/collection_achjtag/semiconductors/rlc/normaux/resistance.elmt" orientation="1">
+                <terminals>
+                    <terminal x="0" y="-17" id="44" orientation="0"/>
+                    <terminal x="0" y="17" id="45" orientation="2"/>
+                </terminals>
+                <inputs>
+                    <input x="7.5" y="3.3333" userrotation="-90" userx="-9.86835" usery="15.8894" text="10k"/>
+                </inputs>
+            </element>
+            <element x="270" y="510" type="embed://import/collection_achjtag/semiconductors/rlc/normaux/resistance.elmt" orientation="1">
+                <terminals>
+                    <terminal x="0" y="-17" id="46" orientation="0"/>
+                    <terminal x="0" y="17" id="47" orientation="2"/>
+                </terminals>
+                <inputs>
+                    <input x="7.5" y="3.3333" userrotation="-90" userx="-9.86835" usery="15.8894" text="10k"/>
+                </inputs>
+            </element>
+            <element x="730" y="50" type="embed://import/collection_achjtag/semiconductors/logic_gates/drv/buf_ien.elmt" orientation="0">
+                <terminals>
+                    <terminal x="-36" y="0" id="48" orientation="3"/>
+                    <terminal x="36" y="20" id="49" orientation="1"/>
+                    <terminal x="-36" y="20" id="50" orientation="3"/>
+                </terminals>
+                <inputs>
+                    <input x="-45" y="10" text="_"/>
+                    <input x="-45" y="-10" text="_"/>
+                    <input x="25" y="10" text="_"/>
+                    <input x="-25" y="45" text="TCK/SWCLK"/>
+                </inputs>
+            </element>
+            <element x="730" y="130" type="embed://import/collection_achjtag/semiconductors/logic_gates/drv/buf_ien.elmt" orientation="0">
+                <terminals>
+                    <terminal x="-36" y="0" id="51" orientation="3"/>
+                    <terminal x="36" y="20" id="52" orientation="1"/>
+                    <terminal x="-36" y="20" id="53" orientation="3"/>
+                </terminals>
+                <inputs>
+                    <input x="-45" y="10" text="_"/>
+                    <input x="-45" y="-10" text="_"/>
+                    <input x="25" y="10" text="_"/>
+                    <input x="-25" y="45" text="TRST"/>
+                </inputs>
+            </element>
+            <element x="730" y="300" type="embed://import/collection_achjtag/semiconductors/logic_gates/drv/buf_ien.elmt" orientation="0">
+                <terminals>
+                    <terminal x="-36" y="0" id="54" orientation="3"/>
+                    <terminal x="36" y="20" id="55" orientation="1"/>
+                    <terminal x="-36" y="20" id="56" orientation="3"/>
+                </terminals>
+                <inputs>
+                    <input x="-45" y="10" text="_"/>
+                    <input x="-45" y="-10" text="_"/>
+                    <input x="25" y="10" text="_"/>
+                    <input x="-25" y="45" text="DO → TDI"/>
+                </inputs>
+            </element>
+            <element x="340" y="590" type="embed://import/collection_achjtag/semiconductors/rlc/normaux/resistance.elmt" orientation="1">
+                <terminals>
+                    <terminal x="0" y="-17" id="57" orientation="0"/>
+                    <terminal x="0" y="17" id="58" orientation="2"/>
+                </terminals>
+                <inputs>
+                    <input x="7.5" y="3.3333" userrotation="-90" userx="-10.0018" usery="15.7114" text="220"/>
+                </inputs>
+            </element>
+            <element x="520" y="250" type="embed://import/collection_achjtag/semiconductors/rlc/normaux/resistance.elmt" orientation="0">
+                <terminals>
+                    <terminal x="0" y="-17" id="59" orientation="0"/>
+                    <terminal x="0" y="17" id="60" orientation="2"/>
+                </terminals>
+                <inputs>
+                    <input x="7.5" y="3.3333" userrotation="-90" userx="-9.86835" usery="15.8894" text="10k"/>
+                </inputs>
+            </element>
+            <element x="520" y="300" type="embed://import/collection_achjtag/terminals/ground.elmt" orientation="0">
+                <terminals>
+                    <terminal x="0" y="-7" id="61" orientation="0"/>
+                </terminals>
+                <inputs/>
+            </element>
+            <element x="480" y="250" type="embed://import/collection_achjtag/semiconductors/rlc/normaux/resistance.elmt" orientation="0">
+                <terminals>
+                    <terminal x="0" y="-17" id="62" orientation="0"/>
+                    <terminal x="0" y="17" id="63" orientation="2"/>
+                </terminals>
+                <inputs>
+                    <input x="7.5" y="3.3333" userrotation="-90" userx="-9.86835" usery="15.8894" text="10k"/>
+                </inputs>
+            </element>
+            <element x="540" y="460" type="embed://import/collection_achjtag/semiconductors/logic_gates/drv/buf_ien.elmt" orientation="0">
+                <terminals>
+                    <terminal x="-36" y="0" id="64" orientation="3"/>
+                    <terminal x="36" y="20" id="65" orientation="1"/>
+                    <terminal x="-36" y="20" id="66" orientation="3"/>
+                </terminals>
+                <inputs>
+                    <input x="-45" y="10" text="_"/>
+                    <input x="-45" y="-10" text="_"/>
+                    <input x="25" y="10" text="_"/>
+                    <input x="-25" y="45" text="TMS → SWDWE"/>
+                </inputs>
+            </element>
+            <element x="590" y="610" type="embed://import/collection_achjtag/semiconductors/rlc/normaux/resistance.elmt" orientation="0">
+                <terminals>
+                    <terminal x="0" y="-17" id="67" orientation="0"/>
+                    <terminal x="0" y="17" id="68" orientation="2"/>
+                </terminals>
+                <inputs>
+                    <input x="7.5" y="3.3333" userrotation="-90" userx="-9.86835" usery="15.8894" text="10k"/>
+                </inputs>
+            </element>
+            <element x="590" y="660" type="embed://import/collection_achjtag/terminals/ground.elmt" orientation="0">
+                <terminals>
+                    <terminal x="0" y="-7" id="69" orientation="0"/>
+                </terminals>
+                <inputs/>
+            </element>
+            <element x="730" y="390" type="embed://import/collection_achjtag/semiconductors/logic_gates/drv/buf_en.elmt" orientation="0">
+                <terminals>
+                    <terminal x="-36" y="0" id="70" orientation="3"/>
+                    <terminal x="36" y="20" id="71" orientation="1"/>
+                    <terminal x="-36" y="20" id="72" orientation="3"/>
+                </terminals>
+                <inputs>
+                    <input x="-45" y="10" text="_"/>
+                    <input x="-45" y="-10" text="_"/>
+                    <input x="25" y="10" text="_"/>
+                    <input x="-25" y="45" text="TMS"/>
+                </inputs>
+            </element>
+            <element x="730" y="580" type="embed://import/collection_achjtag/semiconductors/logic_gates/drv/buf_en.elmt" orientation="0">
+                <terminals>
+                    <terminal x="-36" y="0" id="73" orientation="3"/>
+                    <terminal x="36" y="20" id="74" orientation="1"/>
+                    <terminal x="-36" y="20" id="75" orientation="3"/>
+                </terminals>
+                <inputs>
+                    <input x="-45" y="10" text="_"/>
+                    <input x="-45" y="-10" text="_"/>
+                    <input x="25" y="10" text="_"/>
+                    <input x="-25" y="45" text="SWDO → SWDIO"/>
+                </inputs>
+            </element>
+            <element x="1000" y="70" type="embed://import/collection_achjtag/reference/next_folio.elmt" orientation="0">
+                <terminals>
+                    <terminal x="-9" y="0" id="76" orientation="3"/>
+                </terminals>
+                <inputs>
+                    <input x="5" y="2.6666" text="/"/>
+                </inputs>
+            </element>
+            <element x="1000" y="90" type="embed://import/collection_achjtag/reference/next_folio.elmt" orientation="0">
+                <terminals>
+                    <terminal x="-9" y="0" id="77" orientation="3"/>
+                </terminals>
+                <inputs>
+                    <input x="5" y="2.6666" text="/"/>
+                </inputs>
+            </element>
+            <element x="1000" y="110" type="embed://import/collection_achjtag/reference/next_folio.elmt" orientation="0">
+                <terminals>
+                    <terminal x="-9" y="0" id="78" orientation="3"/>
+                </terminals>
+                <inputs>
+                    <input x="5" y="2.6666" text="/"/>
+                </inputs>
+            </element>
+            <element x="1000" y="130" type="embed://import/collection_achjtag/reference/next_folio.elmt" orientation="0">
+                <terminals>
+                    <terminal x="-9" y="0" id="79" orientation="3"/>
+                </terminals>
+                <inputs>
+                    <input x="5" y="2.6666" text="/"/>
+                </inputs>
+            </element>
+            <element x="1000" y="150" type="embed://import/collection_achjtag/reference/next_folio.elmt" orientation="0">
+                <terminals>
+                    <terminal x="-9" y="0" id="80" orientation="3"/>
+                </terminals>
+                <inputs>
+                    <input x="5" y="2.6666" text="/"/>
+                </inputs>
+            </element>
+            <element x="1000" y="170" type="embed://import/collection_achjtag/reference/next_folio.elmt" orientation="0">
+                <terminals>
+                    <terminal x="-9" y="0" id="81" orientation="3"/>
+                </terminals>
+                <inputs>
+                    <input x="5" y="2.6666" text="/"/>
+                </inputs>
+            </element>
+        </elements>
+        <conductors>
+            <conductor terminal1="31" terminal2="51" type="simple" color="#ff007f">
+                <segment length="0" orientation="horizontal"/>
+                <segment length="-40" orientation="horizontal"/>
+                <segment length="-60" orientation="vertical"/>
+                <segment length="357.333" orientation="horizontal"/>
+                <segment length="22.6663" orientation="horizontal"/>
+            </conductor>
+            <conductor terminal1="46" terminal2="0" type="simple"/>
+            <conductor terminal1="32" terminal2="7" type="simple" color="#55aaff">
+                <segment length="11" orientation="horizontal"/>
+                <segment length="169" orientation="horizontal"/>
+                <segment length="-20" orientation="vertical"/>
+                <segment length="176" orientation="horizontal"/>
+                <segment length="30" orientation="vertical"/>
+                <segment length="-9" orientation="horizontal"/>
+                <segment length="-7" orientation="horizontal"/>
+            </conductor>
+            <conductor terminal1="52" terminal2="2" type="simple">
+                <segment length="0" orientation="horizontal"/>
+                <segment length="40" orientation="horizontal"/>
+                <segment length="380" orientation="vertical"/>
+                <segment length="-349.667" orientation="horizontal"/>
+                <segment length="-29.3333" orientation="horizontal"/>
+            </conductor>
+            <conductor num="TRSTSENSE" vertirotatetext="270" terminal1="16" userx="150" terminal2="1" usery="510" type="multi" horizrotatetext="0"/>
+            <conductor terminal1="44" terminal2="48" type="simple" color="#ff007f"/>
+            <conductor terminal1="3" terminal2="45" type="simple"/>
+            <conductor terminal1="63" terminal2="35" type="simple" color="#55ff7f"/>
+            <conductor terminal1="62" terminal2="3" type="simple"/>
+            <conductor num="Low(0) = SWD" vertirotatetext="270" terminal1="4" userx="490" terminal2="64" usery="340" type="multi" horizrotatetext="0" color="#55ff7f">
+                <segment length="16.5" orientation="horizontal"/>
+                <segment length="3.5" orientation="horizontal"/>
+                <segment length="-110" orientation="vertical"/>
+                <segment length="-310" orientation="horizontal"/>
+                <segment length="100" orientation="vertical"/>
+                <segment length="3.5" orientation="horizontal"/>
+                <segment length="16.5" orientation="horizontal"/>
+            </conductor>
+            <conductor terminal1="6" terminal2="25" type="simple">
+                <segment length="-9" orientation="horizontal"/>
+                <segment length="-51" orientation="horizontal"/>
+                <segment length="-380" orientation="vertical"/>
+                <segment length="-471" orientation="horizontal"/>
+                <segment length="-9" orientation="horizontal"/>
+            </conductor>
+            <conductor terminal1="64" terminal2="35" type="simple" color="#55ff7f">
+                <segment length="-11.5" orientation="horizontal"/>
+                <segment length="-8.5" orientation="horizontal"/>
+                <segment length="-140" orientation="vertical"/>
+                <segment length="-38.5" orientation="horizontal"/>
+                <segment length="-11.5" orientation="horizontal"/>
+            </conductor>
+            <conductor num="TDO (SWDI)" vertirotatetext="270" rotation="0" terminal1="9" userx="150" terminal2="25" usery="90" type="multi" horizrotatetext="0">
+                <segment length="-9" orientation="horizontal"/>
+                <segment length="-51" orientation="horizontal"/>
+                <segment length="-130" orientation="vertical"/>
+                <segment length="-471" orientation="horizontal"/>
+                <segment length="-9" orientation="horizontal"/>
+            </conductor>
+            <conductor num="TDI (SWDO)" vertirotatetext="270" rotation="0" terminal1="24" userx="150" terminal2="56" usery="70" type="multi" horizrotatetext="0">
+                <segment length="9" orientation="horizontal"/>
+                <segment length="491" orientation="horizontal"/>
+                <segment length="230" orientation="vertical"/>
+                <segment length="31" orientation="horizontal"/>
+                <segment length="9" orientation="horizontal"/>
+            </conductor>
+            <conductor num="JS-/JTX-LED" vertirotatetext="270" terminal1="13" userx="150" terminal2="17" usery="570" type="multi" horizrotatetext="0"/>
+            <conductor num="DBGMOD" vertirotatetext="270" terminal1="30" userx="150" terminal2="33" usery="190" type="multi" horizrotatetext="0" color="#5500ff"/>
+            <conductor num="DBGEN# = Low(0)" vertirotatetext="270" terminal1="29" userx="150" terminal2="31" usery="170" type="multi" horizrotatetext="0" color="#ff007f"/>
+            <conductor num="JQ-/JRX-LED" vertirotatetext="270" terminal1="43" userx="150" terminal2="21" usery="550" type="multi" horizrotatetext="0"/>
+            <conductor terminal1="37" terminal2="34" type="simple" color="#ff007f">
+                <segment length="-9" orientation="horizontal"/>
+                <segment length="-31" orientation="horizontal"/>
+                <segment length="-150" orientation="vertical"/>
+                <segment length="31" orientation="horizontal"/>
+                <segment length="9" orientation="horizontal"/>
+            </conductor>
+            <conductor terminal1="31" terminal2="34" type="simple" color="#ff007f">
+                <segment length="-9" orientation="horizontal"/>
+                <segment length="-31" orientation="horizontal"/>
+                <segment length="110" orientation="vertical"/>
+                <segment length="31" orientation="horizontal"/>
+                <segment length="9" orientation="horizontal"/>
+            </conductor>
+            <conductor num="SRST" vertirotatetext="270" rotation="0" terminal1="28" userx="150" terminal2="39" usery="150" type="multi" horizrotatetext="0">
+                <segment length="9" orientation="horizontal"/>
+                <segment length="111" orientation="horizontal"/>
+                <segment length="300" orientation="vertical"/>
+                <segment length="71" orientation="horizontal"/>
+                <segment length="9" orientation="horizontal"/>
+            </conductor>
+            <conductor terminal1="36" terminal2="33" type="simple" color="#5500ff">
+                <segment length="0" orientation="horizontal"/>
+                <segment length="-20" orientation="horizontal"/>
+                <segment length="-110" orientation="vertical"/>
+                <segment length="20" orientation="horizontal"/>
+                <segment length="0" orientation="horizontal"/>
+            </conductor>
+            <conductor num="SRSTSENSE" vertirotatetext="270" terminal1="22" userx="150" terminal2="40" usery="530" type="multi" horizrotatetext="0"/>
+            <conductor num="TCK (SWCLK)" vertirotatetext="270" rotation="0" terminal1="23" userx="150" terminal2="50" usery="50" type="multi" horizrotatetext="0">
+                <segment length="11.5" orientation="horizontal"/>
+                <segment length="253.5" orientation="horizontal"/>
+                <segment length="0" orientation="horizontal"/>
+                <segment length="263.5" orientation="horizontal"/>
+                <segment length="11.5" orientation="horizontal"/>
+            </conductor>
+            <conductor num="VSENSE" vertirotatetext="270" terminal1="15" userx="150" terminal2="47" usery="490" type="multi" horizrotatetext="0"/>
+            <conductor terminal1="38" terminal2="41" type="simple">
+                <segment length="9" orientation="horizontal"/>
+                <segment length="1" orientation="horizontal"/>
+                <segment length="80" orientation="vertical"/>
+                <segment length="-9" orientation="horizontal"/>
+            </conductor>
+            <conductor terminal1="42" terminal2="11" type="simple"/>
+            <conductor num="TRST" vertirotatetext="270" rotation="0" terminal1="53" userx="150" terminal2="27" usery="130" type="multi" horizrotatetext="0">
+                <segment length="-51.5" orientation="horizontal"/>
+                <segment length="-323.5" orientation="horizontal"/>
+                <segment length="0" orientation="horizontal"/>
+                <segment length="-113.5" orientation="horizontal"/>
+                <segment length="-51.5" orientation="horizontal"/>
+            </conductor>
+            <conductor terminal1="10" terminal2="14" type="simple"/>
+            <conductor terminal1="12" terminal2="58" type="simple"/>
+            <conductor terminal1="57" terminal2="14" type="simple"/>
+            <conductor terminal1="32" terminal2="59" type="simple" color="#55aaff"/>
+            <conductor terminal1="60" terminal2="61" type="simple"/>
+            <conductor terminal1="65" terminal2="67" type="simple" color="#55ff7f">
+                <segment length="7.33333" orientation="horizontal"/>
+                <segment length="2.66667" orientation="horizontal"/>
+                <segment length="100" orientation="vertical"/>
+                <segment length="0" orientation="horizontal"/>
+                <segment length="9" orientation="vertical"/>
+            </conductor>
+            <conductor terminal1="68" terminal2="69" type="simple"/>
+            <conductor terminal1="48" terminal2="51" type="simple" color="#ff007f">
+                <segment length="-9" orientation="horizontal"/>
+                <segment length="-11" orientation="horizontal"/>
+                <segment length="80" orientation="vertical"/>
+                <segment length="11" orientation="horizontal"/>
+                <segment length="9" orientation="horizontal"/>
+            </conductor>
+            <conductor num="High(1) = JTAG" vertirotatetext="270" rotation="0" terminal1="70" userx="490" terminal2="32" usery="190" type="multi" horizrotatetext="0" color="#55aaff">
+                <segment length="-21.5" orientation="horizontal"/>
+                <segment length="-58.5" orientation="horizontal"/>
+                <segment length="-180" orientation="vertical"/>
+                <segment length="-158.5" orientation="horizontal"/>
+                <segment length="-21.5" orientation="horizontal"/>
+            </conductor>
+            <conductor terminal1="51" terminal2="54" type="simple" color="#ff007f">
+                <segment length="-9" orientation="horizontal"/>
+                <segment length="-11" orientation="horizontal"/>
+                <segment length="170" orientation="vertical"/>
+                <segment length="11" orientation="horizontal"/>
+                <segment length="9" orientation="horizontal"/>
+            </conductor>
+            <conductor num="TCK | SWCLK" vertirotatetext="270" terminal1="49" userx="890" terminal2="76" usery="50" type="multi" horizrotatetext="0"/>
+            <conductor terminal1="56" terminal2="75" type="simple">
+                <segment length="-9" orientation="horizontal"/>
+                <segment length="-31" orientation="horizontal"/>
+                <segment length="280" orientation="vertical"/>
+                <segment length="31" orientation="horizontal"/>
+                <segment length="9" orientation="horizontal"/>
+            </conductor>
+            <conductor num="SWDWE" vertirotatetext="270" rotation="0" terminal1="65" userx="590" terminal2="73" usery="560" type="multi" horizrotatetext="0" color="#55ff7f">
+                <segment length="9" orientation="horizontal"/>
+                <segment length="1" orientation="horizontal"/>
+                <segment length="100" orientation="vertical"/>
+                <segment length="91" orientation="horizontal"/>
+                <segment length="9" orientation="horizontal"/>
+            </conductor>
+            <conductor terminal1="71" terminal2="77" type="simple">
+                <segment length="26.5" orientation="horizontal"/>
+                <segment length="73.5" orientation="horizontal"/>
+                <segment length="-320" orientation="vertical"/>
+                <segment length="90.5" orientation="horizontal"/>
+                <segment length="26.5" orientation="horizontal"/>
+            </conductor>
+            <conductor terminal1="5" terminal2="77" type="simple">
+                <segment length="26.5" orientation="horizontal"/>
+                <segment length="73.5" orientation="horizontal"/>
+                <segment length="-400" orientation="vertical"/>
+                <segment length="90.5" orientation="horizontal"/>
+                <segment length="26.5" orientation="horizontal"/>
+            </conductor>
+            <conductor num="TMS | SWDIO" vertirotatetext="270" rotation="0" terminal1="74" userx="890" terminal2="77" usery="70" type="multi" horizrotatetext="0">
+                <segment length="26.5" orientation="horizontal"/>
+                <segment length="73.5" orientation="horizontal"/>
+                <segment length="-510" orientation="vertical"/>
+                <segment length="90.5" orientation="horizontal"/>
+                <segment length="26.5" orientation="horizontal"/>
+            </conductor>
+            <conductor num="TDI" vertirotatetext="270" rotation="0" terminal1="55" userx="890" terminal2="78" usery="90" type="multi" horizrotatetext="0">
+                <segment length="26.5" orientation="horizontal"/>
+                <segment length="33.5" orientation="horizontal"/>
+                <segment length="-210" orientation="vertical"/>
+                <segment length="130.5" orientation="horizontal"/>
+                <segment length="26.5" orientation="horizontal"/>
+            </conductor>
+            <conductor num="TDO | SWO" vertirotatetext="270" rotation="0" terminal1="8" userx="890" terminal2="79" usery="110" type="multi" horizrotatetext="0">
+                <segment length="26.5" orientation="horizontal"/>
+                <segment length="53.5" orientation="horizontal"/>
+                <segment length="-110" orientation="vertical"/>
+                <segment length="110.5" orientation="horizontal"/>
+                <segment length="26.5" orientation="horizontal"/>
+            </conductor>
+            <conductor num="TRST" vertirotatetext="270" terminal1="52" userx="890" terminal2="80" usery="130" type="multi" horizrotatetext="0"/>
+            <conductor num="TMS (SWDWE)" vertirotatetext="270" rotation="0" terminal1="26" userx="150" terminal2="72" usery="110" type="multi" horizrotatetext="0">
+                <segment length="11.5" orientation="horizontal"/>
+                <segment length="128.5" orientation="horizontal"/>
+                <segment length="280" orientation="vertical"/>
+                <segment length="388.5" orientation="horizontal"/>
+                <segment length="11.5" orientation="horizontal"/>
+            </conductor>
+            <conductor num="SRST" vertirotatetext="270" rotation="0" terminal1="41" userx="890" terminal2="81" usery="150" type="multi" horizrotatetext="0">
+                <segment length="9" orientation="horizontal"/>
+                <segment length="450" orientation="horizontal"/>
+                <segment length="-380" orientation="vertical"/>
+                <segment length="88" orientation="horizontal"/>
+                <segment length="9" orientation="horizontal"/>
+            </conductor>
+            <conductor terminal1="66" terminal2="26" type="simple">
+                <segment length="-11" orientation="horizontal"/>
+                <segment length="-29" orientation="horizontal"/>
+                <segment length="-70" orientation="vertical"/>
+                <segment length="-170" orientation="horizontal"/>
+                <segment length="-280" orientation="vertical"/>
+                <segment length="-129" orientation="horizontal"/>
+                <segment length="-11" orientation="horizontal"/>
+            </conductor>
+        </conductors>
+    </diagram>
+    <diagram title="UART Layout (null modem) at Port B" displayrows="true" version="0.3" cols="17" folio="%id/%total" displaycols="true" height="660" colsize="60" order="3" rows="8" author="Stephan Linz" filename="" date="20130914" rowsize="80">
+        <defaultconductor type="simple"/>
+        <elements>
+            <element x="450" y="220" type="embed://import/collection_achjtag/terminals/sdb.elmt" orientation="0">
+                <terminals>
+                    <terminal x="-16" y="0" id="0" orientation="3"/>
+                    <terminal x="16" y="0" id="1" orientation="1"/>
+                </terminals>
+                <inputs/>
+            </element>
+            <element x="1000" y="470" type="embed://import/collection_achjtag/reference/next_folio.elmt" orientation="0">
+                <terminals>
+                    <terminal x="-9" y="0" id="2" orientation="3"/>
+                </terminals>
+                <inputs>
+                    <input x="5" y="2.6666" text="/"/>
+                </inputs>
+            </element>
+            <element x="1000" y="220" type="embed://import/collection_achjtag/reference/next_folio.elmt" orientation="0">
+                <terminals>
+                    <terminal x="-9" y="0" id="3" orientation="3"/>
+                </terminals>
+                <inputs>
+                    <input x="5" y="2.6666" text="/"/>
+                </inputs>
+            </element>
+            <element x="1000" y="200" type="embed://import/collection_achjtag/reference/next_folio.elmt" orientation="0">
+                <terminals>
+                    <terminal x="-9" y="0" id="4" orientation="3"/>
+                </terminals>
+                <inputs>
+                    <input x="5" y="2.6666" text="/"/>
+                </inputs>
+            </element>
+            <element x="450" y="200" type="embed://import/collection_achjtag/terminals/sdb.elmt" orientation="0">
+                <terminals>
+                    <terminal x="-16" y="0" id="5" orientation="3"/>
+                    <terminal x="16" y="0" id="6" orientation="1"/>
+                </terminals>
+                <inputs/>
+            </element>
+            <element x="730" y="100" type="embed://import/collection_achjtag/semiconductors/logic_gates/drv/buf_ien.elmt" orientation="0">
+                <terminals>
+                    <terminal x="-36" y="0" id="7" orientation="3"/>
+                    <terminal x="36" y="20" id="8" orientation="1"/>
+                    <terminal x="-36" y="20" id="9" orientation="3"/>
+                </terminals>
+                <inputs>
+                    <input x="-45" y="10" text="_"/>
+                    <input x="-45" y="-10" text="_"/>
+                    <input x="25" y="10" text="_"/>
+                    <input x="-25" y="45" text="TXD → RXD"/>
+                </inputs>
+            </element>
+            <element x="550" y="520" type="embed://import/collection_achjtag/terminals/ground.elmt" orientation="0">
+                <terminals>
+                    <terminal x="0" y="-7" id="10" orientation="0"/>
+                </terminals>
+                <inputs/>
+            </element>
+            <element x="550" y="470" type="embed://import/collection_achjtag/semiconductors/rlc/normaux/resistance.elmt" orientation="0">
+                <terminals>
+                    <terminal x="0" y="-17" id="11" orientation="0"/>
+                    <terminal x="0" y="17" id="12" orientation="2"/>
+                </terminals>
+                <inputs>
+                    <input x="7.5" y="3.3333" userrotation="-90" userx="-9.86835" usery="15.8894" text="10k"/>
+                </inputs>
+            </element>
+            <element x="730" y="180" type="embed://import/collection_achjtag/semiconductors/logic_gates/drv/buf_ien_left.elmt" orientation="0">
+                <terminals>
+                    <terminal x="36" y="0" id="13" orientation="1"/>
+                    <terminal x="36" y="20" id="14" orientation="1"/>
+                    <terminal x="-36" y="20" id="15" orientation="3"/>
+                </terminals>
+                <inputs>
+                    <input x="-45" y="10" text="_"/>
+                    <input x="25" y="-10" text="_"/>
+                    <input x="25" y="10" text="_"/>
+                    <input x="-25" y="45" text="RXD ← TXD"/>
+                </inputs>
+            </element>
+            <element x="730" y="450" type="embed://import/collection_achjtag/semiconductors/logic_gates/drv/buf_en_left.elmt" orientation="0">
+                <terminals>
+                    <terminal x="36" y="0" id="16" orientation="1"/>
+                    <terminal x="36" y="20" id="17" orientation="1"/>
+                    <terminal x="-36" y="20" id="18" orientation="3"/>
+                </terminals>
+                <inputs>
+                    <input x="-45" y="10" text="_"/>
+                    <input x="25" y="-10" text="_"/>
+                    <input x="25" y="10" text="_"/>
+                    <input x="-25" y="45" text="RXD ← SWO"/>
+                </inputs>
+            </element>
+            <element x="1000" y="120" type="embed://import/collection_achjtag/reference/next_folio.elmt" orientation="0">
+                <terminals>
+                    <terminal x="-9" y="0" id="19" orientation="3"/>
+                </terminals>
+                <inputs>
+                    <input x="5" y="2.6666" text="/"/>
+                </inputs>
+            </element>
+            <element x="340" y="360" type="embed://import/collection_achjtag/semiconductors/rlc/normaux/resistance.elmt" orientation="1">
+                <terminals>
+                    <terminal x="0" y="-17" id="20" orientation="0"/>
+                    <terminal x="0" y="17" id="21" orientation="2"/>
+                </terminals>
+                <inputs>
+                    <input x="7.5" y="3.3333" userrotation="-90" userx="-10.0018" usery="15.7114" text="220"/>
+                </inputs>
+            </element>
+            <element x="270" y="340" type="embed://import/collection_achjtag/semiconductors/diodes/diode_led.elmt" orientation="1">
+                <terminals>
+                    <terminal x="0" y="-17" id="22" orientation="0"/>
+                    <terminal x="0" y="17" id="23" orientation="2"/>
+                </terminals>
+                <inputs>
+                    <input x="7.75" y="3" userrotation="-90" userx="-9.75081" usery="-3.81465" text="red"/>
+                </inputs>
+            </element>
+            <element x="390" y="340" type="embed://import/collection_achjtag/terminals/potential.elmt" orientation="1">
+                <terminals>
+                    <terminal x="0" y="6" id="24" orientation="2"/>
+                </terminals>
+                <inputs>
+                    <input x="-8" y="-15" userrotation="-90" userx="0.342969" usery="-1.42891" text="P3V3"/>
+                </inputs>
+            </element>
+            <element x="270" y="360" type="embed://import/collection_achjtag/semiconductors/diodes/diode_led.elmt" orientation="1">
+                <terminals>
+                    <terminal x="0" y="-17" id="25" orientation="0"/>
+                    <terminal x="0" y="17" id="26" orientation="2"/>
+                </terminals>
+                <inputs>
+                    <input x="7.75" y="3" userrotation="-90" userx="-9.75081" usery="-3.81465" text="green"/>
+                </inputs>
+            </element>
+            <element x="340" y="340" type="embed://import/collection_achjtag/semiconductors/rlc/normaux/resistance.elmt" orientation="1">
+                <terminals>
+                    <terminal x="0" y="-17" id="27" orientation="0"/>
+                    <terminal x="0" y="17" id="28" orientation="2"/>
+                </terminals>
+                <inputs>
+                    <input x="7.5" y="3.3333" userrotation="-90" userx="-10.1798" usery="15.5334" text="220"/>
+                </inputs>
+            </element>
+            <element x="110" y="310" type="embed://import/collection_achjtag/semiconductors/integrated_circuits/communication/fdti/rs232/ft2232h/ft2232h_bcbus_rs232.elmt" orientation="1">
+                <terminals>
+                    <terminal x="36" y="-30" id="29" orientation="1"/>
+                    <terminal x="36" y="-10" id="30" orientation="1"/>
+                    <terminal x="36" y="50" id="31" orientation="1"/>
+                    <terminal x="36" y="70" id="32" orientation="1"/>
+                    <terminal x="36" y="90" id="33" orientation="1"/>
+                    <terminal x="36" y="110" id="34" orientation="1"/>
+                    <terminal x="36" y="30" id="35" orientation="1"/>
+                    <terminal x="36" y="10" id="36" orientation="1"/>
+                </terminals>
+                <inputs>
+                    <input x="25" y="-40" text="_"/>
+                    <input x="25" y="20" text="_"/>
+                    <input x="25" y="-20" text="_"/>
+                    <input x="25" y="0" text="_"/>
+                    <input x="25" y="40" text="_"/>
+                    <input x="25" y="60" text="_"/>
+                    <input x="25" y="80" text="_"/>
+                    <input x="25" y="100" text="_"/>
+                    <input x="-70" y="88.5" text="FT2232H BCBUS"/>
+                </inputs>
+            </element>
+            <element x="110" y="150" type="embed://import/collection_achjtag/semiconductors/integrated_circuits/communication/fdti/rs232/ft2232h/ft2232h_bdbus_rs232.elmt" orientation="1">
+                <terminals>
+                    <terminal x="36" y="-30" id="37" orientation="1"/>
+                    <terminal x="36" y="-10" id="38" orientation="1"/>
+                    <terminal x="36" y="10" id="39" orientation="1"/>
+                    <terminal x="36" y="30" id="40" orientation="1"/>
+                    <terminal x="36" y="50" id="41" orientation="1"/>
+                    <terminal x="36" y="70" id="42" orientation="1"/>
+                    <terminal x="36" y="90" id="43" orientation="1"/>
+                    <terminal x="36" y="110" id="44" orientation="1"/>
+                </terminals>
+                <inputs>
+                    <input x="25" y="-20" text="_"/>
+                    <input x="25" y="0" text="_"/>
+                    <input x="25" y="-40" text="_"/>
+                    <input x="25" y="20" text="_"/>
+                    <input x="25" y="60" text="_"/>
+                    <input x="25" y="80" text="_"/>
+                    <input x="25" y="40" text="_"/>
+                    <input x="25" y="100" text="_"/>
+                    <input x="-70" y="89" text="FT2232H BDBUS"/>
+                </inputs>
+            </element>
+            <element x="1000" y="140" type="embed://import/collection_achjtag/reference/next_folio.elmt" orientation="0">
+                <terminals>
+                    <terminal x="-9" y="0" id="45" orientation="3"/>
+                </terminals>
+                <inputs>
+                    <input x="5" y="2.6666" text="/"/>
+                </inputs>
+            </element>
+            <element x="730" y="270" type="embed://import/collection_achjtag/semiconductors/logic_gates/drv/buf_ien.elmt" orientation="0">
+                <terminals>
+                    <terminal x="-36" y="0" id="46" orientation="3"/>
+                    <terminal x="36" y="20" id="47" orientation="1"/>
+                    <terminal x="-36" y="20" id="48" orientation="3"/>
+                </terminals>
+                <inputs>
+                    <input x="-45" y="10" text="_"/>
+                    <input x="-45" y="-10" text="_"/>
+                    <input x="25" y="10" text="_"/>
+                    <input x="-25" y="45" text="RTS → CTS"/>
+                </inputs>
+            </element>
+            <element x="730" y="350" type="embed://import/collection_achjtag/semiconductors/logic_gates/drv/buf_ien_left.elmt" orientation="0">
+                <terminals>
+                    <terminal x="36" y="0" id="49" orientation="1"/>
+                    <terminal x="36" y="20" id="50" orientation="1"/>
+                    <terminal x="-36" y="20" id="51" orientation="3"/>
+                </terminals>
+                <inputs>
+                    <input x="-45" y="10" text="_"/>
+                    <input x="25" y="-10" text="_"/>
+                    <input x="25" y="10" text="_"/>
+                    <input x="-25" y="45" text="CTS ← RTS"/>
+                </inputs>
+            </element>
+            <element x="1000" y="160" type="embed://import/collection_achjtag/reference/next_folio.elmt" orientation="0">
+                <terminals>
+                    <terminal x="-9" y="0" id="52" orientation="3"/>
+                </terminals>
+                <inputs>
+                    <input x="5" y="2.6666" text="/"/>
+                </inputs>
+            </element>
+            <element x="1000" y="180" type="embed://import/collection_achjtag/reference/next_folio.elmt" orientation="0">
+                <terminals>
+                    <terminal x="-9" y="0" id="53" orientation="3"/>
+                </terminals>
+                <inputs>
+                    <input x="5" y="2.6666" text="/"/>
+                </inputs>
+            </element>
+        </elements>
+        <conductors>
+            <conductor num="DSR# ← DTR#" vertirotatetext="270" terminal1="1" userx="890" terminal2="3" usery="200" type="multi" horizrotatetext="0">
+                <segment length="9" orientation="horizontal"/>
+                <segment length="51" orientation="horizontal"/>
+                <segment length="200" orientation="vertical"/>
+                <segment length="360" orientation="horizontal"/>
+                <segment length="-200" orientation="vertical"/>
+                <segment length="88" orientation="horizontal"/>
+                <segment length="9" orientation="horizontal"/>
+            </conductor>
+            <conductor num="DSR#" vertirotatetext="270" terminal1="0" userx="160" terminal2="42" usery="200" type="multi" horizrotatetext="0"/>
+            <conductor num="TDO | SWO" vertirotatetext="270" terminal1="17" userx="890" terminal2="2" usery="450" type="multi" horizrotatetext="0"/>
+            <conductor num="DTR# → DSR#" vertirotatetext="270" terminal1="6" userx="890" terminal2="4" usery="180" type="multi" horizrotatetext="0" color="#55ff7f">
+                <segment length="9" orientation="horizontal"/>
+                <segment length="71" orientation="horizontal"/>
+                <segment length="210" orientation="vertical"/>
+                <segment length="170" orientation="horizontal"/>
+                <segment length="0" orientation="horizontal"/>
+                <segment length="150" orientation="horizontal"/>
+                <segment length="-210" orientation="vertical"/>
+                <segment length="108" orientation="horizontal"/>
+                <segment length="9" orientation="horizontal"/>
+            </conductor>
+            <conductor terminal1="6" terminal2="16" type="simple" color="#55ff7f">
+                <segment length="9" orientation="horizontal"/>
+                <segment length="71" orientation="horizontal"/>
+                <segment length="210" orientation="vertical"/>
+                <segment length="240" orientation="horizontal"/>
+                <segment length="40" orientation="vertical"/>
+                <segment length="-11" orientation="horizontal"/>
+                <segment length="-9" orientation="horizontal"/>
+            </conductor>
+            <conductor terminal1="6" terminal2="49" type="simple" color="#55ff7f">
+                <segment length="9" orientation="horizontal"/>
+                <segment length="71" orientation="horizontal"/>
+                <segment length="210" orientation="vertical"/>
+                <segment length="240" orientation="horizontal"/>
+                <segment length="-60" orientation="vertical"/>
+                <segment length="-11" orientation="horizontal"/>
+                <segment length="-9" orientation="horizontal"/>
+            </conductor>
+            <conductor terminal1="6" terminal2="46" type="simple" color="#55ff7f">
+                <segment length="9" orientation="horizontal"/>
+                <segment length="71" orientation="horizontal"/>
+                <segment length="70" orientation="vertical"/>
+                <segment length="131" orientation="horizontal"/>
+                <segment length="9" orientation="horizontal"/>
+            </conductor>
+            <conductor terminal1="6" terminal2="13" type="simple" color="#55ff7f">
+                <segment length="9" orientation="horizontal"/>
+                <segment length="71" orientation="horizontal"/>
+                <segment length="40" orientation="vertical"/>
+                <segment length="240" orientation="horizontal"/>
+                <segment length="-60" orientation="vertical"/>
+                <segment length="-11" orientation="horizontal"/>
+                <segment length="-9" orientation="horizontal"/>
+            </conductor>
+            <conductor terminal1="6" terminal2="7" type="simple" color="#55ff7f">
+                <segment length="9" orientation="horizontal"/>
+                <segment length="71" orientation="horizontal"/>
+                <segment length="-100" orientation="vertical"/>
+                <segment length="131" orientation="horizontal"/>
+                <segment length="9" orientation="horizontal"/>
+            </conductor>
+            <conductor num="UARTMOD" vertirotatetext="270" rotation="0" terminal1="6" userx="470" terminal2="11" usery="140" type="multi" horizrotatetext="0" color="#55ff7f"/>
+            <conductor num="DTR# = Low(0) → UART = High(1) → SWD" vertirotatetext="270" terminal1="41" userx="160" terminal2="5" usery="180" type="multi" horizrotatetext="0" color="#55ff7f"/>
+            <conductor num="RXD (SWO)" vertirotatetext="270" rotation="0" terminal1="15" userx="160" terminal2="38" usery="120" type="multi" horizrotatetext="0">
+                <segment length="-9" orientation="horizontal"/>
+                <segment length="-71" orientation="horizontal"/>
+                <segment length="-60" orientation="vertical"/>
+                <segment length="-451" orientation="horizontal"/>
+                <segment length="-9" orientation="horizontal"/>
+            </conductor>
+            <conductor num="TXD → RXD" vertirotatetext="270" terminal1="8" userx="890" terminal2="19" usery="100" type="multi" horizrotatetext="0"/>
+            <conductor num="TXD" vertirotatetext="270" terminal1="37" userx="160" terminal2="9" usery="100" type="multi" horizrotatetext="0"/>
+            <conductor terminal1="18" terminal2="38" type="simple">
+                <segment length="-9" orientation="horizontal"/>
+                <segment length="-71" orientation="horizontal"/>
+                <segment length="-330" orientation="vertical"/>
+                <segment length="-451" orientation="horizontal"/>
+                <segment length="-9" orientation="horizontal"/>
+            </conductor>
+            <conductor terminal1="12" terminal2="10" type="simple"/>
+            <conductor num="UTXLED" vertirotatetext="270" terminal1="31" userx="160" terminal2="26" usery="340" type="multi" horizrotatetext="0"/>
+            <conductor num="URXLED" vertirotatetext="270" terminal1="35" userx="160" terminal2="23" usery="320" type="multi" horizrotatetext="0"/>
+            <conductor terminal1="20" terminal2="24" type="simple"/>
+            <conductor terminal1="25" terminal2="21" type="simple"/>
+            <conductor terminal1="27" terminal2="24" type="simple"/>
+            <conductor terminal1="22" terminal2="28" type="simple"/>
+            <conductor num="RXD ← TXD" vertirotatetext="270" rotation="0" terminal1="14" userx="890" terminal2="45" usery="120" type="multi" horizrotatetext="0">
+                <segment length="9" orientation="horizontal"/>
+                <segment length="31" orientation="horizontal"/>
+                <segment length="-60" orientation="vertical"/>
+                <segment length="168" orientation="horizontal"/>
+                <segment length="9" orientation="horizontal"/>
+            </conductor>
+            <conductor num="RTS#" vertirotatetext="270" rotation="0" terminal1="39" userx="160" terminal2="48" usery="140" type="multi" horizrotatetext="0">
+                <segment length="9" orientation="horizontal"/>
+                <segment length="431" orientation="horizontal"/>
+                <segment length="130" orientation="vertical"/>
+                <segment length="91" orientation="horizontal"/>
+                <segment length="9" orientation="horizontal"/>
+            </conductor>
+            <conductor num="CTS#" vertirotatetext="270" rotation="0" terminal1="40" userx="160" terminal2="51" usery="160" type="multi" horizrotatetext="0">
+                <segment length="9" orientation="horizontal"/>
+                <segment length="411" orientation="horizontal"/>
+                <segment length="190" orientation="vertical"/>
+                <segment length="111" orientation="horizontal"/>
+                <segment length="9" orientation="horizontal"/>
+            </conductor>
+            <conductor num="RTS# → CTS#" vertirotatetext="270" rotation="0" terminal1="47" userx="890" terminal2="52" usery="140" type="multi" horizrotatetext="0">
+                <segment length="9" orientation="horizontal"/>
+                <segment length="51" orientation="horizontal"/>
+                <segment length="-130" orientation="vertical"/>
+                <segment length="148" orientation="horizontal"/>
+                <segment length="9" orientation="horizontal"/>
+            </conductor>
+            <conductor num="CTS# ← RTS#" vertirotatetext="270" rotation="0" terminal1="50" userx="890" terminal2="53" usery="160" type="multi" horizrotatetext="0">
+                <segment length="9" orientation="horizontal"/>
+                <segment length="71" orientation="horizontal"/>
+                <segment length="-190" orientation="vertical"/>
+                <segment length="128" orientation="horizontal"/>
+                <segment length="9" orientation="horizontal"/>
+            </conductor>
+        </conductors>
+        <inputs>
+            <input x="250" y="230" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:400; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>Leave open to force UART mode and disable&lt;/p>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>the SWO gate as long as OpenOCD is not&lt;/p>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>ready for serial wire trace.&lt;/p>&lt;/body>&lt;/html>"/>
+        </inputs>
+    </diagram>
+    <collection>
+        <category name="import">
+            <names>
+                <name lang="ru">Импортированные элементы</name>
+                <name lang="el">Εισηγμένα στοιχεία</name>
+                <name lang="en">Imported elements</name>
+                <name lang="it">Elementi importati</name>
+                <name lang="fr">Éléments importés</name>
+                <name lang="pl">Elementy importowane</name>
+                <name lang="es">Elementos importados</name>
+                <name lang="cs">Zavedené prvky</name>
+            </names>
+            <category name="collection_achjtag">
+                <names>
+                    <name lang="ar">ACH-JTAG</name>
+                    <name lang="de">ACH-JTAG</name>
+                    <name lang="ru">ACH-JTAG</name>
+                    <name lang="pt">ACH-JTAG</name>
+                    <name lang="en">ACH-JTAG</name>
+                    <name lang="it">ACH-JTAG</name>
+                    <name lang="fr">ACH-JTAG</name>
+                    <name lang="pl">ACH-JTAG</name>
+                    <name lang="es">ACH-JTAG</name>
+                    <name lang="cs">ACH-JTAG</name>
+                </names>
+                <category name="semiconductors">
+                    <names>
+                        <name lang="ar">أشباه النواقل</name>
+                        <name lang="de">Halbleiter</name>
+                        <name lang="ru">Полупроводники</name>
+                        <name lang="pt">Semi-conductores</name>
+                        <name lang="el">Ημιαγωγοί</name>
+                        <name lang="en">Semiconductors</name>
+                        <name lang="it">Semiconduttori</name>
+                        <name lang="fr">Semi-conducteurs</name>
+                        <name lang="pl">Półprzewodniki</name>
+                        <name lang="es">Semiconductores</name>
+                        <name lang="cs">Polovodiče</name>
+                    </names>
+                    <category name="rlc">
+                        <names>
+                            <name lang="ar">RLC</name>
+                            <name lang="de">RLC</name>
+                            <name lang="ru">RLC</name>
+                            <name lang="pt">RLC</name>
+                            <name lang="en">RLC</name>
+                            <name lang="it">RLC</name>
+                            <name lang="fr">RLC</name>
+                            <name lang="pl">RLC</name>
+                            <name lang="es">RLC</name>
+                            <name lang="cs">RLC</name>
+                        </names>
+                        <category name="normaux">
+                            <names>
+                                <name lang="ar">عادية</name>
+                                <name lang="de">Normal</name>
+                                <name lang="ru">Нормальные</name>
+                                <name lang="pt">Normais</name>
+                                <name lang="el">Κανονικά</name>
+                                <name lang="en">Normal</name>
+                                <name lang="it">Normale</name>
+                                <name lang="fr">Normaux</name>
+                                <name lang="pl">Schemat wielokreskowy</name>
+                                <name lang="es">Normales</name>
+                                <name lang="cs">Obyčejné</name>
+                            </names>
+                            <element name="resistance.elmt">
+                                <definition width="40" version="0.3" hotspot_x="6" hotspot_y="25" height="50" type="element" orientation="dyyy">
+                                    <names>
+                                        <name lang="ar">مُقاومة مُتغيّرة</name>
+                                        <name lang="de">Widerstand</name>
+                                        <name lang="ru">Резистор</name>
+                                        <name lang="pt">Resistência</name>
+                                        <name lang="el">Αντίσταση</name>
+                                        <name lang="en">Resistor</name>
+                                        <name lang="it">Resistore</name>
+                                        <name lang="fr">Résistance</name>
+                                        <name lang="pl">Rezystor</name>
+                                        <name lang="es">Resistencia</name>
+                                        <name lang="cs">Odporník</name>
+                                    </names>
+                                    <informations/>
+                                    <description>
+                                        <rect width="8" x="-4" y="-10" antialias="false" height="20" style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+                                        <input x="7.5" y="3.3333" size="9" rotate="true" text="R_"/>
+                                        <line length1="1.5" length2="1.5" antialias="false" end1="none" end2="none" style="line-style:normal;line-weight:normal;filling:none;color:black" y1="-10" x1="0" y2="-20" x2="0"/>
+                                        <line length1="1.5" length2="1.5" antialias="false" end1="none" end2="none" style="line-style:normal;line-weight:normal;filling:none;color:black" y1="10" x1="0" y2="20" x2="0"/>
+                                        <terminal x="0" y="-21" orientation="n"/>
+                                        <terminal x="0" y="21" orientation="s"/>
+                                    </description>
+                                </definition>
+                            </element>
+                        </category>
+                    </category>
+                    <category name="diodes">
+                        <names>
+                            <name lang="de">Diode</name>
+                            <name lang="en">Diode</name>
+                            <name lang="it">Diodo</name>
+                            <name lang="fr">Diode</name>
+                            <name lang="pl">Dioda</name>
+                            <name lang="cs">Dioda</name>
+                        </names>
+                        <element name="diode_led.elmt">
+                            <definition width="40" version="0.3" hotspot_x="12" hotspot_y="25" height="50" type="element" orientation="dyyy">
+                                <names>
+                                    <name lang="ar">دايود ضاوي LED</name>
+                                    <name lang="de">LED</name>
+                                    <name lang="ru">Светодиод</name>
+                                    <name lang="pt">LED</name>
+                                    <name lang="el">Δίοδος LED</name>
+                                    <name lang="en">LED</name>
+                                    <name lang="it">LED</name>
+                                    <name lang="fr">DEL</name>
+                                    <name lang="pl">Dioda elektroluminescencyjna (LED)</name>
+                                    <name lang="es">LED</name>
+                                    <name lang="cs">Svítící dioda (světelná emisní dioda - LED)</name>
+                                </names>
+                                <informations>Author: The QElectroTech team
+License: see http://qelectrotech.org/wiki/doc/elements_license</informations>
+                                <description>
+                                    <polygon antialias="true" style="line-style:normal;line-weight:thin;filling:black;color:black" y1="2" x1="-7" y2="1" x2="-9" y3="0" x3="-7"/>
+                                    <line length1="1.5" length2="1.5" antialias="false" end1="none" end2="none" style="line-style:normal;line-weight:normal;filling:none;color:black" y1="1" x1="-7" y2="1" x2="-5.25"/>
+                                    <polygon antialias="true" style="line-style:normal;line-weight:thin;filling:black;color:black" y1="-2.5" x1="-9" y2="-3.5" x2="-7" y3="-1.5" x3="-7"/>
+                                    <line length1="1.5" length2="1.5" antialias="false" end1="none" end2="none" style="line-style:normal;line-weight:normal;filling:none;color:black" y1="-2.5" x1="-7" y2="-2.5" x2="-5.25"/>
+                                    <line length1="1.5" length2="1.5" antialias="false" end1="none" end2="none" style="line-style:normal;line-weight:normal;filling:none;color:black" y1="5" x1="-5" y2="5" x2="5"/>
+                                    <polygon antialias="true" style="line-style:normal;line-weight:normal;filling:none;color:black" y1="-5" x1="-5" y2="-5" x2="5" y3="5" x3="0"/>
+                                    <input x="7.75" y="3" size="9" text="_"/>
+                                    <line length1="1.5" length2="1.5" antialias="false" end1="none" end2="none" style="line-style:normal;line-weight:normal;filling:none;color:black" y1="-20" x1="0" y2="20" x2="0"/>
+                                    <terminal x="0" y="-21" orientation="n"/>
+                                    <terminal x="0" y="21" orientation="s"/>
+                                </description>
+                            </definition>
+                        </element>
+                    </category>
+                    <category name="logic_gates">
+                        <names>
+                            <name lang="de">Logik-Gatter</name>
+                            <name lang="en">Logic gates</name>
+                        </names>
+                        <category name="drv">
+                            <names>
+                                <name lang="de">DRV-Gatter</name>
+                                <name lang="en">DRV gates</name>
+                            </names>
+                            <element name="buf_en_left.elmt">
+                                <definition width="100" version="0.3" hotspot_x="51" hotspot_y="28" height="90" type="element" ic="true" orientation="dyyy">
+                                    <names>
+                                        <name lang="de">Buffer, EN, left out</name>
+                                        <name lang="en">Buffer, EN, left out</name>
+                                    </names>
+                                    <informations>Author: The QElectroTech team
+License: see http://qelectrotech.org/wiki/doc/elements_license</informations>
+                                    <description>
+                                        <rect width="40" x="-20" y="-20" antialias="false" height="50" style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+                                        <input x="-45" y="10" size="8" rotate="true" text="_"/>
+                                        <text x="4" y="4" size="8" text="EN"/>
+                                        <line length1="3" length2="3" antialias="false" end1="none" end2="none" style="line-style:normal;line-weight:normal;filling:none;color:black" y1="20" x1="-40" y2="20" x2="-20"/>
+                                        <line length1="3" length2="3" antialias="false" end1="none" end2="none" style="line-style:normal;line-weight:normal;filling:none;color:black" y1="20" x1="40" y2="20" x2="20"/>
+                                        <input x="25" y="-10" size="8" rotate="true" text="_"/>
+                                        <input x="25" y="10" size="8" rotate="true" text="_"/>
+                                        <line length1="3" length2="3" antialias="false" end1="none" end2="none" style="line-style:normal;line-weight:normal;filling:none;color:black" y1="0" x1="40" y2="0" x2="20"/>
+                                        <input x="-25" y="45" size="9" rotate="true" text="_"/>
+                                        <text x="-3.5" y="-8" size="8" text="1"/>
+                                        <polygon x4="-17" antialias="false" style="line-style:normal;line-weight:normal;filling:none;color:black" y1="15" x1="-17" y2="15" x2="-7" y3="25" x3="-12" y4="15"/>
+                                        <terminal x="40" y="0" orientation="e"/>
+                                        <terminal x="40" y="20" orientation="e"/>
+                                        <terminal x="-40" y="20" orientation="w"/>
+                                    </description>
+                                </definition>
+                            </element>
+                            <element name="buf_ien_left.elmt">
+                                <definition width="100" version="0.3" hotspot_x="51" hotspot_y="28" height="90" type="element" ic="true" orientation="dyyy">
+                                    <names>
+                                        <name lang="de">Buffer, inv. EN, left out</name>
+                                        <name lang="en">Buffer, inv. EN, left out</name>
+                                    </names>
+                                    <informations>Author: The QElectroTech team
+License: see http://qelectrotech.org/wiki/doc/elements_license</informations>
+                                    <description>
+                                        <rect width="40" x="-20" y="-20" antialias="false" height="50" style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+                                        <input x="-45" y="10" size="8" rotate="true" text="_"/>
+                                        <text x="4" y="4" size="8" text="EN"/>
+                                        <line length1="3" length2="3" antialias="false" end1="none" end2="none" style="line-style:normal;line-weight:normal;filling:none;color:black" y1="20" x1="-40" y2="20" x2="-20"/>
+                                        <line length1="3" length2="3" antialias="false" end1="none" end2="none" style="line-style:normal;line-weight:normal;filling:none;color:black" y1="20" x1="40" y2="20" x2="20"/>
+                                        <input x="25" y="-10" size="8" rotate="true" text="_"/>
+                                        <input x="25" y="10" size="8" rotate="true" text="_"/>
+                                        <line length1="3" length2="3" antialias="false" end1="none" end2="circle" style="line-style:normal;line-weight:normal;filling:none;color:black" y1="0" x1="40" y2="0" x2="20"/>
+                                        <input x="-25" y="45" size="9" rotate="true" text="_"/>
+                                        <text x="-3.5" y="-8" size="8" text="1"/>
+                                        <polygon x4="-17" antialias="false" style="line-style:normal;line-weight:normal;filling:none;color:black" y1="15" x1="-17" y2="15" x2="-7" y3="25" x3="-12" y4="15"/>
+                                        <terminal x="40" y="0" orientation="e"/>
+                                        <terminal x="40" y="20" orientation="e"/>
+                                        <terminal x="-40" y="20" orientation="w"/>
+                                    </description>
+                                </definition>
+                            </element>
+                            <element name="buf_ien.elmt">
+                                <definition width="100" version="0.3" hotspot_x="51" hotspot_y="28" height="90" type="element" ic="true" orientation="dyyy">
+                                    <names>
+                                        <name lang="de">Buffer, inv. EN</name>
+                                        <name lang="en">Buffer, inv. EN</name>
+                                    </names>
+                                    <informations>Author: The QElectroTech team
+License: see http://qelectrotech.org/wiki/doc/elements_license</informations>
+                                    <description>
+                                        <input x="-45" y="10" size="8" rotate="true" text="_"/>
+                                        <text x="-19" y="4" size="8" text="EN"/>
+                                        <line length1="3" length2="3" antialias="false" end1="none" end2="none" style="line-style:normal;line-weight:normal;filling:none;color:black" y1="20" x1="-40" y2="20" x2="-20"/>
+                                        <rect width="40" x="-20" y="-20" antialias="false" height="50" style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+                                        <line length1="3" length2="3" antialias="false" end1="none" end2="none" style="line-style:normal;line-weight:normal;filling:none;color:black" y1="20" x1="40" y2="20" x2="20"/>
+                                        <input x="-45" y="-10" size="8" rotate="true" text="_"/>
+                                        <input x="25" y="10" size="8" rotate="true" text="_"/>
+                                        <line length1="3" length2="3" antialias="false" end1="none" end2="circle" style="line-style:normal;line-weight:normal;filling:none;color:black" y1="0" x1="-40" y2="0" x2="-20"/>
+                                        <input x="-25" y="45" size="9" rotate="true" text="_"/>
+                                        <text x="-3.5" y="-8" size="8" text="1"/>
+                                        <polygon x4="7" antialias="false" style="line-style:normal;line-weight:normal;filling:none;color:black" y1="15" x1="7" y2="15" x2="17" y3="25" x3="12" y4="15"/>
+                                        <terminal x="-40" y="0" orientation="w"/>
+                                        <terminal x="40" y="20" orientation="e"/>
+                                        <terminal x="-40" y="20" orientation="w"/>
+                                    </description>
+                                </definition>
+                            </element>
+                            <element name="buf_en.elmt">
+                                <definition width="100" version="0.3" hotspot_x="51" hotspot_y="28" height="90" type="element" ic="true" orientation="dyyy">
+                                    <names>
+                                        <name lang="de">Buffer, EN</name>
+                                        <name lang="en">Buffer, EN</name>
+                                    </names>
+                                    <informations>Author: The QElectroTech team
+License: see http://qelectrotech.org/wiki/doc/elements_license</informations>
+                                    <description>
+                                        <input x="-45" y="10" size="8" rotate="true" text="_"/>
+                                        <text x="-19" y="4" size="8" text="EN"/>
+                                        <line length1="3" length2="3" antialias="false" end1="none" end2="none" style="line-style:normal;line-weight:normal;filling:none;color:black" y1="20" x1="-40" y2="20" x2="-20"/>
+                                        <rect width="40" x="-20" y="-20" antialias="false" height="50" style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+                                        <line length1="3" length2="3" antialias="false" end1="none" end2="none" style="line-style:normal;line-weight:normal;filling:none;color:black" y1="20" x1="40" y2="20" x2="20"/>
+                                        <input x="-45" y="-10" size="8" rotate="true" text="_"/>
+                                        <input x="25" y="10" size="8" rotate="true" text="_"/>
+                                        <line length1="3" length2="3" antialias="false" end1="none" end2="none" style="line-style:normal;line-weight:normal;filling:none;color:black" y1="0" x1="-40" y2="0" x2="-20"/>
+                                        <input x="-25" y="45" size="9" rotate="true" text="_"/>
+                                        <text x="-3.5" y="-8" size="8" text="1"/>
+                                        <polygon x4="7" antialias="false" style="line-style:normal;line-weight:normal;filling:none;color:black" y1="15" x1="7" y2="15" x2="17" y3="25" x3="12" y4="15"/>
+                                        <terminal x="-40" y="0" orientation="w"/>
+                                        <terminal x="40" y="20" orientation="e"/>
+                                        <terminal x="-40" y="20" orientation="w"/>
+                                    </description>
+                                </definition>
+                            </element>
+                        </category>
+                    </category>
+                    <category name="integrated_circuits">
+                        <names>
+                            <name lang="ar">دوائر مدمجة</name>
+                            <name lang="de">Integrierte Schaltungen</name>
+                            <name lang="el">Ολοκληρωμένα κυκλώματα</name>
+                            <name lang="en">Integrated Circuits</name>
+                            <name lang="it">Circuiti integrati</name>
+                            <name lang="fr">Circuits integrés</name>
+                            <name lang="pl">Układy scalone</name>
+                            <name lang="cs">Integrované obvody</name>
+                        </names>
+                        <category name="communication">
+                            <names>
+                                <name lang="de">Kommunikation</name>
+                                <name lang="en">Communication</name>
+                            </names>
+                            <category name="fdti">
+                                <names>
+                                    <name lang="de">Future Tchnology Devices International, Ltd.</name>
+                                    <name lang="en">Future Tchnology Devices International, Ltd.</name>
+                                </names>
+                                <category name="mpsse">
+                                    <names>
+                                        <name lang="de">MPSSE</name>
+                                        <name lang="en">MPSSE</name>
+                                    </names>
+                                    <category name="ft2232h">
+                                        <names>
+                                            <name lang="de">FT2232H</name>
+                                            <name lang="en">FT2232H</name>
+                                        </names>
+                                        <element name="ft2232h_adbus_mpsse.elmt">
+                                            <definition width="130" version="0.3" hotspot_x="85" hotspot_y="56" height="180" type="element" orientation="ydyy">
+                                                <names>
+                                                    <name lang="de">FT2232H, ADBUS, MPSSE</name>
+                                                    <name lang="en">FT2232H, ADBUS, MPSSE</name>
+                                                </names>
+                                                <informations/>
+                                                <description>
+                                                    <input x="25" y="-20" size="8" rotate="true" text="_"/>
+                                                    <input x="25" y="0" size="8" rotate="true" text="_"/>
+                                                    <input x="25" y="-40" size="8" rotate="true" text="_"/>
+                                                    <input x="25" y="20" size="8" rotate="true" text="_"/>
+                                                    <input x="25" y="60" size="8" rotate="true" text="_"/>
+                                                    <input x="25" y="80" size="8" rotate="true" text="_"/>
+                                                    <input x="25" y="40" size="8" rotate="true" text="_"/>
+                                                    <input x="25" y="100" size="8" rotate="true" text="_"/>
+                                                    <polygon antialias="false" style="line-style:normal;line-weight:normal;filling:none;color:black" closed="false" y1="-40" x1="20" y2="120" x2="20" y3="120" x3="-70"/>
+                                                    <line length1="3" length2="3" antialias="false" end1="simple" end2="none" style="line-style:normal;line-weight:normal;filling:none;color:black" y1="50" x1="40" y2="50" x2="20"/>
+                                                    <line length1="3" length2="3" antialias="false" end1="simple" end2="none" style="line-style:normal;line-weight:normal;filling:none;color:black" y1="70" x1="40" y2="70" x2="20"/>
+                                                    <line length1="3" length2="3" antialias="false" end1="simple" end2="none" style="line-style:normal;line-weight:normal;filling:none;color:black" y1="90" x1="40" y2="90" x2="20"/>
+                                                    <line length1="3" length2="3" antialias="false" end1="simple" end2="none" style="line-style:normal;line-weight:normal;filling:none;color:black" y1="110" x1="40" y2="110" x2="20"/>
+                                                    <line length1="3" length2="3" antialias="false" end1="simple" end2="none" style="line-style:normal;line-weight:normal;filling:none;color:black" y1="-30" x1="40" y2="-30" x2="20"/>
+                                                    <line length1="3" length2="3" antialias="false" end1="simple" end2="none" style="line-style:normal;line-weight:normal;filling:none;color:black" y1="-10" x1="40" y2="-10" x2="20"/>
+                                                    <line length1="3" length2="3" antialias="false" end1="none" end2="simple" style="line-style:normal;line-weight:normal;filling:none;color:black" y1="10" x1="40" y2="10" x2="20"/>
+                                                    <line length1="3" length2="3" antialias="false" end1="simple" end2="none" style="line-style:normal;line-weight:normal;filling:none;color:black" y1="30" x1="40" y2="30" x2="20"/>
+                                                    <input x="-70" y="85" size="8" rotation="270" rotate="true" text="FT2232H ADBUS"/>
+                                                    <text x="-45" y="114" size="8" text="GPIOL3/AD7"/>
+                                                    <text x="-46" y="94" size="8" text="GPIOL2/AD6"/>
+                                                    <text x="-45" y="74" size="8" text="GPIOL1/AD5"/>
+                                                    <text x="-46" y="54" size="8" text="GPIOL0/AD4"/>
+                                                    <text x="-48" y="34" size="8" text="TMS/CS/AD3"/>
+                                                    <text x="-45" y="14" size="8" text="TDO/DI/AD2"/>
+                                                    <text x="-45" y="-6" size="8" text="TDI/DO/AD1"/>
+                                                    <text x="-46" y="-26" size="8" text="TCK/SK/AD0"/>
+                                                    <terminal x="40" y="-30" orientation="e"/>
+                                                    <terminal x="40" y="-10" orientation="e"/>
+                                                    <terminal x="40" y="10" orientation="e"/>
+                                                    <terminal x="40" y="30" orientation="e"/>
+                                                    <terminal x="40" y="50" orientation="e"/>
+                                                    <terminal x="40" y="70" orientation="e"/>
+                                                    <terminal x="40" y="90" orientation="e"/>
+                                                    <terminal x="40" y="110" orientation="e"/>
+                                                </description>
+                                            </definition>
+                                        </element>
+                                        <element name="ft2232h_acbus_mpsse.elmt">
+                                            <definition width="130" version="0.3" hotspot_x="85" hotspot_y="56" height="180" type="element" orientation="ydyy">
+                                                <names>
+                                                    <name lang="de">FT2232H, ACBUS, MPSSE</name>
+                                                    <name lang="en">FT2232H, ACBUS, MPSSE</name>
+                                                </names>
+                                                <informations/>
+                                                <description>
+                                                    <input x="25" y="-40" size="8" rotate="true" text="_"/>
+                                                    <input x="25" y="20" size="8" rotate="true" text="_"/>
+                                                    <input x="25" y="-20" size="8" rotate="true" text="_"/>
+                                                    <input x="25" y="0" size="8" rotate="true" text="_"/>
+                                                    <input x="25" y="40" size="8" rotate="true" text="_"/>
+                                                    <input x="25" y="60" size="8" rotate="true" text="_"/>
+                                                    <input x="25" y="80" size="8" rotate="true" text="_"/>
+                                                    <input x="25" y="100" size="8" rotate="true" text="_"/>
+                                                    <line length1="3" length2="3" antialias="false" end1="simple" end2="none" style="line-style:normal;line-weight:normal;filling:none;color:black" y1="30" x1="40" y2="30" x2="20"/>
+                                                    <line length1="3" length2="3" antialias="false" end1="none" end2="simple" style="line-style:normal;line-weight:normal;filling:none;color:black" y1="10" x1="40" y2="10" x2="20"/>
+                                                    <polygon antialias="false" style="line-style:normal;line-weight:normal;filling:none;color:black" closed="false" y1="-40" x1="20" y2="120" x2="20" y3="120" x3="-70"/>
+                                                    <line length1="3" length2="3" antialias="false" end1="none" end2="none" style="line-style:normal;line-weight:normal;filling:none;color:black" y1="90" x1="40" y2="90" x2="20"/>
+                                                    <line length1="3" length2="3" antialias="false" end1="none" end2="none" style="line-style:normal;line-weight:normal;filling:none;color:black" y1="110" x1="40" y2="110" x2="20"/>
+                                                    <line length1="3" length2="3" antialias="false" end1="none" end2="simple" style="line-style:normal;line-weight:normal;filling:none;color:black" y1="-30" x1="40" y2="-30" x2="20"/>
+                                                    <line length1="3" length2="3" antialias="false" end1="none" end2="simple" style="line-style:normal;line-weight:normal;filling:none;color:black" y1="-10" x1="40" y2="-10" x2="20"/>
+                                                    <line length1="3" length2="3" antialias="false" end1="simple" end2="none" style="line-style:normal;line-weight:normal;filling:none;color:black" y1="50" x1="40" y2="50" x2="20"/>
+                                                    <line length1="3" length2="3" antialias="false" end1="none" end2="none" style="line-style:normal;line-weight:normal;filling:none;color:black" y1="70" x1="40" y2="70" x2="20"/>
+                                                    <input x="-70" y="88.5" size="8" rotation="270" rotate="true" text="FT2232H ACBUS"/>
+                                                    <text x="-46" y="114" size="8" text="GPIOH7/AC7"/>
+                                                    <text x="-47" y="94" size="8" text="GPIOH6/AC6"/>
+                                                    <text x="-46" y="74" size="8" text="GPIOH5/AC5"/>
+                                                    <text x="-47" y="54" size="8" text="GPIOH4/AC4"/>
+                                                    <text x="-46" y="34" size="8" text="GPIOH3/AC3"/>
+                                                    <text x="-46" y="14" size="8" text="GPIOH2/AC2"/>
+                                                    <text x="-46" y="-6" size="8" text="GPIOH1/AC1"/>
+                                                    <text x="-47" y="-26" size="8" text="GPIOH0/AC0"/>
+                                                    <terminal x="40" y="-30" orientation="e"/>
+                                                    <terminal x="40" y="-10" orientation="e"/>
+                                                    <terminal x="40" y="50" orientation="e"/>
+                                                    <terminal x="40" y="70" orientation="e"/>
+                                                    <terminal x="40" y="90" orientation="e"/>
+                                                    <terminal x="40" y="110" orientation="e"/>
+                                                    <terminal x="40" y="30" orientation="e"/>
+                                                    <terminal x="40" y="10" orientation="e"/>
+                                                </description>
+                                            </definition>
+                                        </element>
+                                    </category>
+                                </category>
+                                <category name="rs232">
+                                    <names>
+                                        <name lang="de">RS232</name>
+                                        <name lang="en">RS232</name>
+                                    </names>
+                                    <category name="ft2232h">
+                                        <names>
+                                            <name lang="de">FT2232H</name>
+                                            <name lang="en">FT2232H</name>
+                                        </names>
+                                        <element name="ft2232h_bcbus_rs232.elmt">
+                                            <definition width="130" version="0.3" hotspot_x="85" hotspot_y="56" height="180" type="element" orientation="ydyy">
+                                                <names>
+                                                    <name lang="de">FT2232H, BCBUS, RS232</name>
+                                                    <name lang="en">FT2232H, BCBUS, RS232</name>
+                                                </names>
+                                                <informations/>
+                                                <description>
+                                                    <input x="25" y="-40" size="8" rotate="true" text="_"/>
+                                                    <input x="25" y="20" size="8" rotate="true" text="_"/>
+                                                    <input x="25" y="-20" size="8" rotate="true" text="_"/>
+                                                    <input x="25" y="0" size="8" rotate="true" text="_"/>
+                                                    <input x="25" y="40" size="8" rotate="true" text="_"/>
+                                                    <input x="25" y="60" size="8" rotate="true" text="_"/>
+                                                    <input x="25" y="80" size="8" rotate="true" text="_"/>
+                                                    <input x="25" y="100" size="8" rotate="true" text="_"/>
+                                                    <line length1="3" length2="3" antialias="false" end1="simple" end2="none" style="line-style:normal;line-weight:normal;filling:none;color:black" y1="30" x1="40" y2="30" x2="20"/>
+                                                    <line length1="3" length2="3" antialias="false" end1="none" end2="none" style="line-style:normal;line-weight:normal;filling:none;color:black" y1="10" x1="40" y2="10" x2="20"/>
+                                                    <polygon antialias="false" style="line-style:normal;line-weight:normal;filling:none;color:black" closed="false" y1="-40" x1="20" y2="120" x2="20" y3="120" x3="-70"/>
+                                                    <line length1="3" length2="3" antialias="false" end1="none" end2="none" style="line-style:normal;line-weight:normal;filling:none;color:black" y1="90" x1="40" y2="90" x2="20"/>
+                                                    <line length1="3" length2="3" antialias="false" end1="none" end2="simple" style="line-style:normal;line-weight:normal;filling:none;color:black" y1="110" x1="40" y2="110" x2="20"/>
+                                                    <line length1="3" length2="3" antialias="false" end1="simple" end2="none" style="line-style:normal;line-weight:normal;filling:none;color:black" y1="-30" x1="40" y2="-30" x2="20"/>
+                                                    <line length1="3" length2="3" antialias="false" end1="none" end2="none" style="line-style:normal;line-weight:normal;filling:none;color:black" y1="-10" x1="40" y2="-10" x2="20"/>
+                                                    <line length1="3" length2="3" antialias="false" end1="simple" end2="none" style="line-style:normal;line-weight:normal;filling:none;color:black" y1="50" x1="40" y2="50" x2="20"/>
+                                                    <line length1="3" length2="3" antialias="false" end1="none" end2="none" style="line-style:normal;line-weight:normal;filling:none;color:black" y1="70" x1="40" y2="70" x2="20"/>
+                                                    <input x="-70" y="88.5" size="8" rotation="270" rotate="true" text="FT2232H BCBUS"/>
+                                                    <text x="-59" y="114" size="8" text="PWRSAV#/BC7"/>
+                                                    <text x="-26" y="94" size="8" text="n.c./BC6"/>
+                                                    <text x="-25" y="74" size="8" text="n.c./BC5"/>
+                                                    <text x="-51" y="54" size="8" text="TXLED#/BC4"/>
+                                                    <text x="-50" y="34" size="8" text="RXLED#/BC3"/>
+                                                    <text x="-25" y="14" size="8" text="n.c./BC2"/>
+                                                    <text x="-25" y="-6" size="8" text="n.c./BC1"/>
+                                                    <text x="-44" y="-26" size="8" text="TXDEN/BC0"/>
+                                                    <terminal x="40" y="-30" orientation="e"/>
+                                                    <terminal x="40" y="-10" orientation="e"/>
+                                                    <terminal x="40" y="50" orientation="e"/>
+                                                    <terminal x="40" y="70" orientation="e"/>
+                                                    <terminal x="40" y="90" orientation="e"/>
+                                                    <terminal x="40" y="110" orientation="e"/>
+                                                    <terminal x="40" y="30" orientation="e"/>
+                                                    <terminal x="40" y="10" orientation="e"/>
+                                                </description>
+                                            </definition>
+                                        </element>
+                                        <element name="ft2232h_bdbus_rs232.elmt">
+                                            <definition width="130" version="0.3" hotspot_x="85" hotspot_y="56" height="180" type="element" orientation="ydyy">
+                                                <names>
+                                                    <name lang="de">FT2232H, BDBUS, RS232</name>
+                                                    <name lang="en">FT2232H, BDBUS, RS232</name>
+                                                </names>
+                                                <informations/>
+                                                <description>
+                                                    <input x="25" y="-20" size="8" rotate="true" text="_"/>
+                                                    <input x="25" y="0" size="8" rotate="true" text="_"/>
+                                                    <input x="25" y="-40" size="8" rotate="true" text="_"/>
+                                                    <input x="25" y="20" size="8" rotate="true" text="_"/>
+                                                    <input x="25" y="60" size="8" rotate="true" text="_"/>
+                                                    <input x="25" y="80" size="8" rotate="true" text="_"/>
+                                                    <input x="25" y="40" size="8" rotate="true" text="_"/>
+                                                    <input x="25" y="100" size="8" rotate="true" text="_"/>
+                                                    <polygon antialias="false" style="line-style:normal;line-weight:normal;filling:none;color:black" closed="false" y1="-40" x1="20" y2="120" x2="20" y3="120" x3="-70"/>
+                                                    <line length1="3" length2="3" antialias="false" end1="simple" end2="none" style="line-style:normal;line-weight:normal;filling:none;color:black" y1="50" x1="40" y2="50" x2="20"/>
+                                                    <line length1="3" length2="3" antialias="false" end1="none" end2="simple" style="line-style:normal;line-weight:normal;filling:none;color:black" y1="70" x1="40" y2="70" x2="20"/>
+                                                    <line length1="3" length2="3" antialias="false" end1="none" end2="simple" style="line-style:normal;line-weight:normal;filling:none;color:black" y1="90" x1="40" y2="90" x2="20"/>
+                                                    <line length1="3" length2="3" antialias="false" end1="none" end2="simple" style="line-style:normal;line-weight:normal;filling:none;color:black" y1="110" x1="40" y2="110" x2="20"/>
+                                                    <line length1="3" length2="3" antialias="false" end1="simple" end2="none" style="line-style:normal;line-weight:normal;filling:none;color:black" y1="-30" x1="40" y2="-30" x2="20"/>
+                                                    <line length1="3" length2="3" antialias="false" end1="none" end2="simple" style="line-style:normal;line-weight:normal;filling:none;color:black" y1="-10" x1="40" y2="-10" x2="20"/>
+                                                    <line length1="3" length2="3" antialias="false" end1="simple" end2="none" style="line-style:normal;line-weight:normal;filling:none;color:black" y1="10" x1="40" y2="10" x2="20"/>
+                                                    <line length1="3" length2="3" antialias="false" end1="none" end2="simple" style="line-style:normal;line-weight:normal;filling:none;color:black" y1="30" x1="40" y2="30" x2="20"/>
+                                                    <input x="-70" y="89" size="8" rotation="270" rotate="true" text="FT2232H BDBUS"/>
+                                                    <text x="-26" y="114" size="8" text="RI#/BD7"/>
+                                                    <text x="-40" y="94" size="8" text="DCD#/BD6"/>
+                                                    <text x="-38" y="74" size="8" text="DSR#/BD5"/>
+                                                    <text x="-39" y="54" size="8" text="DTR#/BD4"/>
+                                                    <text x="-37" y="34" size="8" text="CTS#/BD3"/>
+                                                    <text x="-36" y="14" size="8" text="RTS#/BD2"/>
+                                                    <text x="-29" y="-6" size="8" text="RXD/BD1"/>
+                                                    <text x="-30" y="-26" size="8" text="TXD/BD0"/>
+                                                    <terminal x="40" y="-30" orientation="e"/>
+                                                    <terminal x="40" y="-10" orientation="e"/>
+                                                    <terminal x="40" y="10" orientation="e"/>
+                                                    <terminal x="40" y="30" orientation="e"/>
+                                                    <terminal x="40" y="50" orientation="e"/>
+                                                    <terminal x="40" y="70" orientation="e"/>
+                                                    <terminal x="40" y="90" orientation="e"/>
+                                                    <terminal x="40" y="110" orientation="e"/>
+                                                </description>
+                                            </definition>
+                                        </element>
+                                    </category>
+                                </category>
+                            </category>
+                        </category>
+                    </category>
+                </category>
+                <category name="terminals">
+                    <names>
+                        <name lang="ar">طرفيات توصيل</name>
+                        <name lang="de">Klemmen</name>
+                        <name lang="ru">соеденителей</name>
+                        <name lang="pt">Terminais</name>
+                        <name lang="el">Ακροδέκτες</name>
+                        <name lang="en">Terminals</name>
+                        <name lang="it">Terminali</name>
+                        <name lang="fr">Bornes</name>
+                        <name lang="pl">Złącza i zaciski</name>
+                        <name lang="es">Terminales</name>
+                        <name lang="cs">Svorky</name>
+                    </names>
+                    <element name="potential.elmt">
+                        <definition width="20" version="0.3" hotspot_x="10" hotspot_y="33" height="50" type="element" ic="true" orientation="dyyy">
+                            <names>
+                                <name lang="ar">طرف نهائي</name>
+                                <name lang="de">Potential</name>
+                                <name lang="ru">Клеммник</name>
+                                <name lang="pt">Terminal de fim</name>
+                                <name lang="en">Potential</name>
+                                <name lang="it">Terminale di fine</name>
+                                <name lang="fr">Borne finale</name>
+                                <name lang="pl">Zacisk</name>
+                                <name lang="es">Punto de unión</name>
+                                <name lang="cs">Koncová svorka</name>
+                            </names>
+                            <informations>Author: The QElectroTech team
+License: see http://qelectrotech.org/wiki/doc/elements_license</informations>
+                            <description>
+                                <input x="-8" y="-15" size="9" text="_"/>
+                                <line length1="3" length2="3" antialias="false" end1="none" end2="none" style="line-style:normal;line-weight:normal;filling:none;color:black" y1="10" x1="0" y2="3" x2="0"/>
+                                <circle x="-3" y="-3" antialias="true" style="line-style:normal;line-weight:normal;filling:none;color:black" diameter="6"/>
+                                <terminal x="0" y="10" orientation="s"/>
+                            </description>
+                        </definition>
+                    </element>
+                    <element name="sdb.elmt">
+                        <definition width="50" version="0.3" hotspot_x="25" hotspot_y="10" height="30" type="element" orientation="dnnn">
+                            <names>
+                                <name lang="de">Lötbrücke</name>
+                                <name lang="en">Solder bridge</name>
+                            </names>
+                            <informations>Author: The QElectroTech team
+License: see http://qelectrotech.org/wiki/doc/elements_license</informations>
+                            <description>
+                                <line length1="3" length2="3" antialias="false" end1="none" end2="none" style="line-style:dotted;line-weight:normal;filling:none;color:black" y1="0" x1="-5" y2="0" x2="5"/>
+                                <arc width="10" x="0" y="-5" antialias="true" height="10" style="line-style:dotted;line-weight:normal;filling:none;color:black" start="90" angle="-180"/>
+                                <line length1="3" length2="3" antialias="false" end1="none" end2="none" style="line-style:normal;line-weight:normal;filling:none;color:black" y1="0" x1="20" y2="0" x2="10"/>
+                                <line length1="3" length2="3" antialias="false" end1="none" end2="none" style="line-style:normal;line-weight:normal;filling:none;color:black" y1="0" x1="-10" y2="0" x2="-20"/>
+                                <arc width="10" x="-10" y="-5" antialias="true" height="10" style="line-style:dotted;line-weight:normal;filling:none;color:black" start="-90" angle="-180"/>
+                                <text x="-22" y="12" size="5" text="solder bridge"/>
+                                <terminal x="-20" y="0" orientation="w"/>
+                                <terminal x="20" y="0" orientation="e"/>
+                            </description>
+                        </definition>
+                    </element>
+                    <element name="ground.elmt">
+                        <definition width="20" version="0.3" hotspot_x="9" hotspot_y="16" height="20" type="element" orientation="dnny">
+                            <names>
+                                <name lang="ar">هيكل معدني</name>
+                                <name lang="de">Masse</name>
+                                <name lang="ru">Шасси</name>
+                                <name lang="pt">Massa</name>
+                                <name lang="en">Ground</name>
+                                <name lang="it">Massa</name>
+                                <name lang="fr">Masse</name>
+                                <name lang="pl">Masa</name>
+                                <name lang="es">Masa</name>
+                                <name lang="cs">Kostra</name>
+                            </names>
+                            <informations/>
+                            <description>
+                                <line length1="0" length2="0" antialias="false" end1="none" end2="none" style="line-style:normal;line-weight:normal;filling:none;color:black" y1="1" x1="-7" y2="1" x2="8"/>
+                                <line length1="0" length2="0" antialias="false" end1="none" end2="none" style="line-style:normal;line-weight:normal;filling:none;color:black" y1="0" x1="-7" y2="0" x2="8"/>
+                                <line length1="0" length2="0" antialias="false" end1="none" end2="none" style="line-style:normal;line-weight:normal;filling:none;color:black" y1="-10" x1="0" y2="0" x2="0"/>
+                                <terminal x="0" y="-11" orientation="n"/>
+                            </description>
+                        </definition>
+                    </element>
+                </category>
+                <category name="reference">
+                    <names>
+                        <name lang="ar">إحالات</name>
+                        <name lang="de">Referenz</name>
+                        <name lang="el">Αναφορές</name>
+                        <name lang="en">References</name>
+                        <name lang="it">Riferimenti</name>
+                        <name lang="fr">Renvois</name>
+                        <name lang="pl">Odsyłacze</name>
+                        <name lang="cs">Výstupy</name>
+                    </names>
+                    <element name="next_folio.elmt">
+                        <definition width="40" version="0.3" hotspot_x="15" hotspot_y="20" height="40" type="element" orientation="dyyy">
+                            <names>
+                                <name lang="ar">الصفحة التالية</name>
+                                <name lang="de">Nächste Seite</name>
+                                <name lang="el">Επόμενη σελίδα</name>
+                                <name lang="en">Next folio</name>
+                                <name lang="it">Foglio successivo</name>
+                                <name lang="fr">Folio suivant</name>
+                                <name lang="pl">Wyjście adresowe</name>
+                                <name lang="cs">Další list</name>
+                            </names>
+                            <informations/>
+                            <description>
+                                <polygon x4="-9" antialias="true" style="line-style:normal;line-weight:normal;filling:black;color:black" closed="false" y1="-4" x1="-9" y2="4" x2="-9" y3="0" x3="2" y4="-4"/>
+                                <line length1="1.5" length2="1.5" antialias="false" end1="none" end2="none" style="line-style:normal;line-weight:normal;filling:none;color:black" y1="0" x1="-9" y2="0" x2="-12"/>
+                                <input x="5" y="2.6666" size="9" rotate="true" text="/"/>
+                                <terminal x="-13" y="0" orientation="w"/>
+                            </description>
+                        </definition>
+                    </element>
+                </category>
+                <element name="ach_jtag_overview.elmt">
+                    <definition width="840" version="0.3" hotspot_x="6" hotspot_y="5" height="450" type="element" orientation="dnnn">
+                        <names>
+                            <name lang="de">ACH-JTAG Blockdiagramm</name>
+                            <name lang="en">ACH-JTAG DP Chart</name>
+                        </names>
+                        <informations/>
+                        <description>
+                            <text x="730" y="285" size="10" text="RTS, CTS,"/>
+                            <text x="730" y="270" size="10" text="TxD, RxD,"/>
+                            <polygon style="line-style:normal;line-weight:normal;filling:green;color:black" x1="602.5" x2="697.5" x3="697.5" x4="720" antialias="true" x5="697.5" x6="697.5" x7="602.5" x8="602.5" x9="580" y1="267.5" y10="257.5" y2="267.5" y11="267.5" y3="257.5" y4="280" y5="302.5" x10="602.5" y6="292.5" x11="602.5" y7="292.5" y8="302.5" y9="280"/>
+                            <rect width="300" x="280" y="10" antialias="true" height="200" style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+                            <text x="621" y="356" size="18" text="SWO"/>
+                            <line length1="10" length2="10" antialias="true" end1="triangle" end2="none" style="line-style:normal;line-weight:normal;filling:blue;color:blue" y1="360" x1="580" y2="360" x2="720"/>
+                            <line length1="10" length2="10" antialias="true" end1="none" end2="triangle" style="line-style:normal;line-weight:normal;filling:black;color:black" y1="180" x1="580" y2="180" x2="720"/>
+                            <text x="618.5" y="176" size="18" text="SRST"/>
+                            <line length1="10" length2="10" antialias="true" end1="none" end2="simple" style="line-style:dashed;line-weight:normal;filling:black;color:black" y1="100" x1="380" y2="100" x2="530"/>
+                            <polygon style="line-style:normal;line-weight:normal;filling:blue;color:black" x1="602.5" x2="697.5" x3="697.5" x4="720" antialias="true" x5="697.5" x6="697.5" x7="602.5" x8="602.5" x9="580" y1="97.5" y10="87.5" y2="97.5" y11="97.5" y3="87.5" y4="110" y5="132.5" x10="602.5" y6="122.5" x11="602.5" y7="122.5" y8="132.5" y9="110"/>
+                            <rect width="100" x="280" y="60" antialias="true" height="80" style="line-style:normal;line-weight:normal;filling:black;color:black"/>
+                            <text x="290" y="104" size="10" color="white" text="control logic"/>
+                            <rect width="50" x="530" y="20" antialias="true" height="180" style="line-style:normal;line-weight:normal;filling:black;color:black"/>
+                            <text x="560" y="180" size="10" rotation="270" color="white" text="switched driver gates"/>
+                            <polygon style="line-style:normal;line-weight:normal;filling:red;color:black" x1="602.5" x2="697.5" x3="697.5" x4="720" antialias="true" x5="697.5" x6="697.5" x7="602.5" x8="602.5" x9="580" y1="37.5" y10="27.5" y2="37.5" y11="37.5" y3="27.5" y4="50" y5="72.5" x10="602.5" y6="62.5" x11="602.5" y7="62.5" y8="72.5" y9="50"/>
+                            <rect width="300" x="280" y="230" antialias="true" height="200" style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+                            <line length1="10" length2="10" antialias="true" end1="none" end2="simple" style="line-style:dashed;line-weight:normal;filling:black;color:black" y1="400" x1="380" y2="400" x2="530"/>
+                            <rect width="100" x="280" y="380" antialias="true" height="40" style="line-style:normal;line-weight:normal;filling:black;color:black"/>
+                            <text x="290" y="404" size="10" color="white" text="control logic"/>
+                            <rect width="50" x="530" y="240" antialias="true" height="180" style="line-style:normal;line-weight:normal;filling:black;color:black"/>
+                            <text x="560" y="400" size="10" rotation="270" color="white" text="switched driver gates"/>
+                            <rect width="50" x="90" y="0" antialias="true" height="220" style="line-style:normal;line-weight:normal;filling:black;color:white"/>
+                            <text x="124.5" y="140" size="18" rotation="270" color="white" text="AxBUS"/>
+                            <rect width="50" x="90" y="220" antialias="true" height="220" style="line-style:normal;line-weight:normal;filling:black;color:white"/>
+                            <text x="124.5" y="370" size="18" rotation="270" color="white" text="BxBUS"/>
+                            <rect width="140" x="0" y="0" antialias="true" height="440" style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+                            <text x="50" y="273.5" size="18" rotation="270" text="FT2232H"/>
+                            <line length1="10" length2="10" antialias="true" end1="none" end2="triangle" style="line-style:normal;line-weight:normal;filling:black;color:black" y1="400" x1="140" y2="400" x2="280"/>
+                            <text x="154" y="356" size="18" text="SWO"/>
+                            <line length1="10" length2="10" antialias="true" end1="triangle" end2="none" style="line-style:normal;line-weight:normal;filling:black;color:black" y1="360" x1="140" y2="360" x2="280"/>
+                            <text x="218" y="356" size="10" text="(RxD)"/>
+                            <text x="154" y="396" size="18" text="SWOEN"/>
+                            <text x="218" y="416" size="10" text="(DTR)"/>
+                            <polygon style="line-style:normal;line-weight:normal;filling:none;color:black" x1="162.5" x2="257.5" x3="257.5" x4="280" antialias="true" x5="257.5" x6="257.5" x7="162.5" x8="162.5" x9="140" y1="267.5" y10="257.5" y2="267.5" y11="267.5" y3="257.5" y4="280" y5="302.5" x10="162.5" y6="292.5" x11="162.5" y7="292.5" y8="302.5" y9="280"/>
+                            <text x="154" y="156" size="18" text="TRST"/>
+                            <line length1="10" length2="10" antialias="true" end1="triangle" end2="triangle" style="line-style:normal;line-weight:normal;filling:black;color:black" y1="160" x1="140" y2="160" x2="280"/>
+                            <text x="218" y="156" size="10" text="(sense)"/>
+                            <text x="154" y="186" size="18" text="SRST"/>
+                            <line length1="10" length2="10" antialias="true" end1="triangle" end2="triangle" style="line-style:normal;line-weight:normal;filling:black;color:black" y1="190" x1="140" y2="190" x2="280"/>
+                            <text x="218" y="186" size="10" text="(sense)"/>
+                            <text x="154" y="86" size="18" text="DBGEN#"/>
+                            <line length1="10" length2="10" antialias="true" end1="none" end2="triangle" style="line-style:normal;line-weight:normal;filling:blue;color:blue" y1="120" x1="140" y2="120" x2="280"/>
+                            <text x="154" y="116" size="18" text="DBGMOD"/>
+                            <polygon style="line-style:normal;line-weight:normal;filling:none;color:black" x1="162.5" x2="257.5" x3="257.5" x4="280" antialias="true" x5="257.5" x6="257.5" x7="162.5" x8="162.5" x9="140" y1="27.5" y10="17.5" y2="27.5" y11="27.5" y3="17.5" y4="40" y5="62.5" x10="162.5" y6="52.5" x11="162.5" y7="52.5" y8="62.5" y9="40"/>
+                            <line length1="10" length2="10" antialias="true" end1="none" end2="triangle" style="line-style:normal;line-weight:normal;filling:red;color:red" y1="90" x1="140" y2="90" x2="280"/>
+                            <text x="170" y="49" size="18" text="MPSSE"/>
+                            <text x="172" y="289" size="18" text="RS232"/>
+                            <text x="622.5" y="57" size="18" color="white" text="JTAG"/>
+                            <text x="621" y="119" size="18" color="white" text="SWD"/>
+                            <text x="611.5" y="289" size="18" text="RS232"/>
+                            <text x="320" y="186" size="18" text="JTAG or SWD"/>
+                            <text x="290" y="272" size="18" text="UART or SWD Trace"/>
+                            <text x="730" y="185" size="10" text="System Reset"/>
+                            <text x="730" y="125" size="10" text="SWDIO"/>
+                            <text x="730" y="110" size="10" text="SWCLK,"/>
+                            <text x="730" y="70" size="10" text="TRST"/>
+                            <text x="730" y="55" size="10" text="TDI, TDO,"/>
+                            <text x="730" y="40" size="10" text="TCK, TMS,"/>
+                            <text x="730" y="365" size="10" text="SWD Trace Out"/>
+                            <text x="730" y="300" size="10" text="DTR, DSR"/>
+                        </description>
+                    </definition>
+                </element>
+            </category>
+        </category>
+    </collection>
+</project>
