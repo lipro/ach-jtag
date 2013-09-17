@@ -1,8 +1,8 @@
-<project title="" version="0.3">
+<project title="ACH-JTAG" version="0.3">
     <properties/>
     <newdiagrams>
         <border displayrows="true" cols="17" displaycols="true" colsize="60" rows="8" rowsize="80"/>
-        <inset title="" folio="%id/%total" author="" filename="" date="null"/>
+        <inset title="" folio="%id/%total" author="Stephan Linz" filename="" date="now"/>
         <conductors type="simple"/>
     </newdiagrams>
     <diagram title="Overview (DP chart)" displayrows="true" version="0.3" cols="17" folio="%id/%total" displaycols="true" height="660" colsize="60" order="1" rows="8" author="Stephan Linz" filename="" date="20130914" rowsize="80">
