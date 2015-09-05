@@ -1,0 +1,182 @@
+_______________________________________________________________________________
+
+Find devices and parse EEPROM content
+_______________________________________________________________________________
+
+[user@host]> ftdi-examples-find_all_pp -v 0x0403 -p 0x6010
+
+Found devices ( VID: 0x403, PID: 0x6010 )
+------------------------------------------------
+FTDI (0x15e7540): Alere Technologies GmbH, ACH-JTAG, AJ000000 (Open OK)
+
+[user@host]> ftdi-examples-eeprom -v 0x0403 -p 0x6010
+
+Chip type 4 ftdi_eeprom_size: 128
+0x000: 01 08 03 04 10 60 00 07  80 32 08 00 00 00 9a 30 .....`.. .2.....0
+0x010: ca 12 dc 12 00 00 00 00  46 00 30 03 41 00 6c 00 ........ F.0.A.l.
+0x020: 65 00 72 00 65 00 20 00  54 00 65 00 63 00 68 00 e.r.e. . T.e.c.h.
+0x030: 6e 00 6f 00 6c 00 6f 00  67 00 69 00 65 00 73 00 n.o.l.o. g.i.e.s.
+0x040: 20 00 47 00 6d 00 62 00  48 00 12 03 41 00 43 00  .G.m.b. H...A.C.
+0x050: 48 00 2d 00 4a 00 54 00  41 00 47 00 12 03 41 00 H.-.J.T. A.G...A.
+0x060: 4a 00 30 00 30 00 30 00  30 00 30 00 30 00 00 00 J.0.0.0. 0.0.0...
+0x070: 00 00 00 00 00 00 00 00  00 00 00 00 00 00 3e eb ........ ......>.
+VID:     0x0403
+PID:     0x6010
+Release: 0x0700
+Bus Powered: 100 mA
+Manufacturer: Alere Technologies GmbH
+Product:      ACH-JTAG
+Serial:       AJ000000
+Checksum      : eb3e
+Attached EEPROM: 93x46
+PNP: 1
+Channel A has Mode FIFO
+Channel B has Mode UART VCP
+AL has 4 mA drive
+AH has 4 mA drive
+BL has 4 mA drive
+BH has 4 mA drive
+_______________________________________________________________________________
+
+Read EEPROM content into raw file
+_______________________________________________________________________________
+
+[user@host]> cat > achjtag-save.cfg << :EOF
+vendor_id=0x0403             # Vendor ID
+product_id=0x6010            # Product ID
+filename="achjtag.eep"  # Filename, where to write EEPROM content
+:EOF
+
+[user@host]> ftdi-eeprom --read-eeprom achjtag-save.cfg
+
+FTDI eeprom generator v0.17
+(c) Intra2net AG and the libftdi developers <opensource@intra2net.com>
+FTDI read eeprom: 0
+EEPROM size: 128
+FTDI close: 0
+
+[user@host]> md5sum achjtag.eep && echo && hexdump achjtag.eep
+
+aad006557105e6ebbcd5f5115b6ea9c4  achjtag.eep
+
+0000000 0801 0403 6010 0700 3280 0008 0000 309a
+0000010 12ca 12dc 0000 0000 0046 0330 0041 006c
+0000020 0065 0072 0065 0020 0054 0065 0063 0068
+0000030 006e 006f 006c 006f 0067 0069 0065 0073
+0000040 0020 0047 006d 0062 0048 0312 0041 0043
+0000050 0048 002d 004a 0054 0041 0047 0312 0041
+0000060 004a 0030 0030 0030 0030 0030 0030 0000
+0000070 0000 0000 0000 0000 0000 0000 0000 eb3e
+0000080
+_______________________________________________________________________________
+
+Erase and Reflash EEPROM content from raw file
+_______________________________________________________________________________
+
+[user@host]> cat > achjtag-burn.cfg << :EOF
+vendor_id=0x0403        # Vendor ID
+product_id=0x6010       # Product ID
+flash_raw=true          # Write raw from filename
+filename="achjtag.eep"  # Filename, where to write EEPROM content
+:EOF
+
+[user@host]> ftdi-eeprom --erase-eeprom achjtag-burn.cfg
+
+FTDI eeprom generator v0.17
+(c) Intra2net AG and the libftdi developers <opensource@intra2net.com>
+FTDI read eeprom: 0
+EEPROM size: 128
+FTDI erase eeprom: 0
+Used eeprom space: 110 bytes
+FTDI close: 0
+
+[user@host]> ftdi-eeprom --flash-eeprom achjtag-burn.cfg
+
+FTDI eeprom generator v0.17
+(c) Intra2net AG and the libftdi developers <opensource@intra2net.com>
+FTDI read eeprom: 0
+EEPROM size: -1
+Used eeprom space: 110 bytes
+FTDI write eeprom: 0
+FTDI close: 0
+
+[user@host]> ftdi-examples-eeprom -v 0x0403 -p 0x6010
+
+Chip type 4 ftdi_eeprom_size: 128
+0x000: 01 08 03 04 10 60 00 07  80 32 08 00 00 00 9a 30 .....`.. .2.....0
+0x010: ca 12 dc 12 00 00 00 00  46 00 30 03 41 00 6c 00 ........ F.0.A.l.
+0x020: 65 00 72 00 65 00 20 00  54 00 65 00 63 00 68 00 e.r.e. . T.e.c.h.
+0x030: 6e 00 6f 00 6c 00 6f 00  67 00 69 00 65 00 73 00 n.o.l.o. g.i.e.s.
+0x040: 20 00 47 00 6d 00 62 00  48 00 12 03 41 00 43 00  .G.m.b. H...A.C.
+0x050: 48 00 2d 00 4a 00 54 00  41 00 47 00 12 03 41 00 H.-.J.T. A.G...A.
+0x060: 4a 00 30 00 30 00 30 00  30 00 30 00 30 00 00 00 J.0.0.0. 0.0.0...
+0x070: 00 00 00 00 00 00 00 00  00 00 00 00 00 00 3e eb ........ ......>.
+VID:     0x0403
+PID:     0x6010
+Release: 0x0700
+Bus Powered: 100 mA
+Manufacturer: Alere Technologies GmbH
+Product:      ACH-JTAG
+Serial:       AJ000000
+Checksum      : eb3e
+Attached EEPROM: 93x46
+PNP: 1
+Channel A has Mode FIFO
+Channel B has Mode UART VCP
+AL has 4 mA drive
+AH has 4 mA drive
+BL has 4 mA drive
+BH has 4 mA drive
+_______________________________________________________________________________
+
+Erase and Reflash EEPROM content from configuration file
+_______________________________________________________________________________
+
+[user@host]> ftdi-eeprom --erase-eeprom achjtag.cfg
+
+FTDI eeprom generator v0.17
+(c) Intra2net AG and the libftdi developers <opensource@intra2net.com>
+FTDI read eeprom: 0
+EEPROM size: 128
+FTDI erase eeprom: 0
+Used eeprom space: 120 bytes
+FTDI close: 0
+
+[user@host]> ftdi-eeprom --flash-eeprom achjtag.cfg
+
+FTDI eeprom generator v0.17
+(c) Intra2net AG and the libftdi developers <opensource@intra2net.com>
+FTDI read eeprom: 0
+EEPROM size: -1
+Used eeprom space: 120 bytes
+FTDI write eeprom: 0
+FTDI close: 0
+
+[user@host]> ftdi-examples-eeprom -v 0x0403 -p 0x6010
+
+Chip type 4 ftdi_eeprom_size: 128
+0x000: 01 08 03 04 10 60 00 07  80 32 08 00 00 00 9a 30 .....`.. .2.....0
+0x010: ca 12 dc 12 00 00 00 00  46 00 30 03 41 00 6c 00 ........ F.0.A.l.
+0x020: 65 00 72 00 65 00 20 00  54 00 65 00 63 00 68 00 e.r.e. . T.e.c.h.
+0x030: 6e 00 6f 00 6c 00 6f 00  67 00 69 00 65 00 73 00 n.o.l.o. g.i.e.s.
+0x040: 20 00 47 00 6d 00 62 00  48 00 12 03 41 00 43 00  .G.m.b. H...A.C.
+0x050: 48 00 2d 00 4a 00 54 00  41 00 47 00 12 03 41 00 H.-.J.T. A.G...A.
+0x060: 4a 00 30 00 30 00 30 00  30 00 30 00 30 00 02 03 J.0.0.0. 0.0.0...
+0x070: 00 00 00 00 00 00 00 00  00 00 00 00 00 00 3d e9 ........ ......=.
+VID:     0x0403
+PID:     0x6010
+Release: 0x0700
+Bus Powered: 100 mA
+Manufacturer: Alere Technologies GmbH
+Product:      ACH-JTAG
+Serial:       AJ000000
+Checksum      : e93d
+Attached EEPROM: 93x46
+PNP: 1
+Channel A has Mode FIFO
+Channel B has Mode UART VCP
+AL has 4 mA drive
+AH has 4 mA drive
+BL has 4 mA drive
+BH has 4 mA drive
+
